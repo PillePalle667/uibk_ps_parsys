@@ -1,0 +1,623 @@
+BENCHMARKING OF mmul
+O0
+=======================================
+PROBLEM SIZE 64: 
+0.03user 0.00system 0:00.01elapsed 228%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+162minor)pagefaults 0swaps
+0.01user 0.00system 0:00.00elapsed 240%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 66%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 133%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 133%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 160%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 133%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.01user 0.00system 0:00.00elapsed 240%CPU (0avgtext+0avgdata 2884maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 128: 
+0.08user 0.00system 0:00.02elapsed 338%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.07user 0.00system 0:00.02elapsed 313%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.07user 0.00system 0:00.02elapsed 347%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.11user 0.00system 0:00.03elapsed 322%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.15user 0.00system 0:00.05elapsed 288%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.08user 0.00system 0:00.02elapsed 336%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.07user 0.00system 0:00.02elapsed 313%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.12user 0.00system 0:00.03elapsed 333%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.10user 0.00system 0:00.02elapsed 344%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.10user 0.00system 0:00.03elapsed 346%CPU (0avgtext+0avgdata 3180maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 246: 
+0.63user 0.00system 0:00.16elapsed 380%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.62user 0.01system 0:00.16elapsed 376%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.62user 0.00system 0:00.16elapsed 380%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.61user 0.01system 0:00.16elapsed 371%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.62user 0.00system 0:00.18elapsed 335%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.62user 0.00system 0:00.16elapsed 376%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.62user 0.00system 0:00.16elapsed 375%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.62user 0.00system 0:00.16elapsed 380%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.63user 0.00system 0:00.17elapsed 369%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.63user 0.00system 0:00.16elapsed 373%CPU (0avgtext+0avgdata 3856maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 512: 
+6.77user 0.01system 0:01.73elapsed 391%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.78user 0.01system 0:01.74elapsed 389%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.78user 0.02system 0:01.74elapsed 390%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.81user 0.01system 0:01.74elapsed 390%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.80user 0.01system 0:01.74elapsed 391%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.79user 0.01system 0:01.76elapsed 385%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.88user 0.01system 0:01.81elapsed 380%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.81user 0.02system 0:01.75elapsed 389%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.80user 0.03system 0:01.73elapsed 393%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+6.81user 0.02system 0:01.74elapsed 391%CPU (0avgtext+0avgdata 8164maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 1024: 
+67.92user 0.06system 0:17.29elapsed 393%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+67.67user 0.06system 0:17.51elapsed 386%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+70.64user 0.18system 0:21.40elapsed 330%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+70.90user 0.25system 0:21.19elapsed 335%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+71.98user 0.16system 0:22.66elapsed 318%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+68.61user 0.10system 0:18.42elapsed 373%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+68.38user 0.09system 0:18.28elapsed 374%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+68.28user 0.10system 0:17.94elapsed 380%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+68.76user 0.07system 0:18.38elapsed 374%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+68.20user 0.17system 0:18.10elapsed 377%CPU (0avgtext+0avgdata 26908maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+O3
+========================================================================
+PROBLEM SIZE 64: 
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 133%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 133%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 133%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2872maxresident)k
+0inputs+0outputs (0major+161minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 128: 
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 160%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 160%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 133%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 160%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 160%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+235minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 246: 
+0.06user 0.00system 0:00.02elapsed 304%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.04user 0.00system 0:00.01elapsed 311%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.12user 0.00system 0:00.04elapsed 288%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.07user 0.00system 0:00.02elapsed 304%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.05user 0.00system 0:00.01elapsed 329%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.06user 0.00system 0:00.01elapsed 352%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.04user 0.00system 0:00.01elapsed 282%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.08user 0.00system 0:00.02elapsed 300%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.06user 0.00system 0:00.02elapsed 300%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+0.05user 0.00system 0:00.01elapsed 325%CPU (0avgtext+0avgdata 3844maxresident)k
+0inputs+0outputs (0major+496minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 512: 
+1.00user 0.02system 0:00.27elapsed 368%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+0.99user 0.02system 0:00.27elapsed 373%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+1.00user 0.01system 0:00.28elapsed 364%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+0.99user 0.03system 0:00.34elapsed 295%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+1.09user 0.00system 0:00.43elapsed 251%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+1.10user 0.00system 0:00.44elapsed 248%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+1.18user 0.02system 0:00.45elapsed 262%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+1.10user 0.02system 0:00.43elapsed 255%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+1.11user 0.01system 0:00.44elapsed 257%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+1.10user 0.02system 0:00.45elapsed 249%CPU (0avgtext+0avgdata 8152maxresident)k
+0inputs+0outputs (0major+1685minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+=======================================
+PROBLEM SIZE 1024: 
+16.64user 0.08system 0:05.84elapsed 286%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+16.01user 0.10system 0:05.05elapsed 319%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+15.70user 0.08system 0:04.66elapsed 338%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+15.12user 0.06system 0:04.46elapsed 340%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+15.66user 0.08system 0:04.33elapsed 363%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+15.07user 0.10system 0:04.26elapsed 355%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+15.08user 0.07system 0:04.35elapsed 348%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+15.10user 0.06system 0:04.47elapsed 339%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+16.01user 0.10system 0:05.06elapsed 318%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+15.77user 0.11system 0:04.64elapsed 342%CPU (0avgtext+0avgdata 26896maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

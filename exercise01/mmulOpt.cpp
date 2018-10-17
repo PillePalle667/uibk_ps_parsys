@@ -28,7 +28,7 @@ void Transpose(int size, Matrix m)
 
 Matrix SeqMatrixMult3(int size, Matrix& m1, Matrix& m2, Matrix& result)
 {
-
+    Transpose(n,m2);
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
             int c = 0;
@@ -38,6 +38,7 @@ Matrix SeqMatrixMult3(int size, Matrix& m1, Matrix& m2, Matrix& result)
             result[i][j] = c;
         }
     }
+    Transpose(n,m2);
     return result;
 }
 

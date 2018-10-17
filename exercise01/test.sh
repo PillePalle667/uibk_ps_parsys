@@ -1,5 +1,5 @@
 #!/bin/bash
-g++ $3 -o $1 -O0 -std=c++11 -Wall
+g++ $3 -o $1 -O0 -pg -std=c++11 -Wall -fopenmp
 echo "BENCHMARKING OF "$1>>$2 
 echo "O0">>$2
 echo "=======================================">>$2
@@ -47,7 +47,7 @@ gprof $1>>$2
 #/usr/bin/time --output=$2 --append  ./$1 2048 >>$2;
 #./$1 2048
 #gprof $1>>$2
-g++ $3 -o $1 -O3 -std=c++11 -Wall
+g++ $3 -o $1 -O3 -pg -std=c++11 -Wall -fopenmp
 echo "O3">>$2
 echo "========================================================================">>$2
 echo "PROBLEM SIZE 64: ">>$2

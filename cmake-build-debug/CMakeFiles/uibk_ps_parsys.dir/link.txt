@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/uibk_ps_parsys.dir/exercise01/mmul.cpp.o CMakeFiles/uibk_ps_parsys.dir/exercise01/mmul_loopunroll.cpp.o CMakeFiles/uibk_ps_parsys.dir/exercise01/mmulOpenMP.cpp.o CMakeFiles/uibk_ps_parsys.dir/exercise01/mmulOpt.cpp.o CMakeFiles/uibk_ps_parsys.dir/exercise02/mmul.cpp.o  -o uibk_ps_parsys 

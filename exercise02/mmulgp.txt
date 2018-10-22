@@ -1,0 +1,1839 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZmlRK6MatrixS1_
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00       1/1           __libc_csu_init [184]
+[8]      0.0    0.00    0.00       1         _GLOBAL__sub_I__ZmlRK6MatrixS1_ [8]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [9]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZmlRK6MatrixS1_ [8]
+[9]      0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [9]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [8] _GLOBAL__sub_I__ZmlRK6MatrixS1_ [9] __static_initialization_and_destruction_0(int, int)
+BENCHMARKING OF mmul
+O0
+=======================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3728maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3616maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3484maxresident)k
+0inputs+0outputs (0major+153minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3608maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3720maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3656maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3600maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3656maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3728maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 95 ms 
+Ret: 0
+0.09user 0.00system 0:00.09elapsed 98%CPU (0avgtext+0avgdata 4024maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 100%CPU (0avgtext+0avgdata 4016maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 95 ms 
+Ret: 0
+0.09user 0.00system 0:00.09elapsed 100%CPU (0avgtext+0avgdata 3984maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 99%CPU (0avgtext+0avgdata 3904maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 100%CPU (0avgtext+0avgdata 3940maxresident)k
+0inputs+0outputs (0major+232minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.09user 0.00system 0:00.10elapsed 100%CPU (0avgtext+0avgdata 3780maxresident)k
+0inputs+0outputs (0major+226minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 100%CPU (0avgtext+0avgdata 3904maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.09user 0.00system 0:00.09elapsed 98%CPU (0avgtext+0avgdata 3808maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 99%CPU (0avgtext+0avgdata 4020maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.09user 0.00system 0:00.10elapsed 99%CPU (0avgtext+0avgdata 3932maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 693 ms 
+Ret: 0
+0.69user 0.00system 0:00.70elapsed 99%CPU (0avgtext+0avgdata 4848maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 683 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4968maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 691 ms 
+Ret: 0
+0.69user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4988maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 688 ms 
+Ret: 0
+0.69user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 5064maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 683 ms 
+Ret: 0
+0.67user 0.01system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4828maxresident)k
+0inputs+0outputs (0major+488minor)pagefaults 0swaps
+Timer - Multiplication: 689 ms 
+Ret: 0
+0.69user 0.00system 0:00.69elapsed 100%CPU (0avgtext+0avgdata 5036maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 683 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4932maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 684 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4848maxresident)k
+0inputs+0outputs (0major+489minor)pagefaults 0swaps
+Timer - Multiplication: 684 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4944maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 687 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4924maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 6297 ms 
+Ret: 0
+6.26user 0.03system 0:06.32elapsed 99%CPU (0avgtext+0avgdata 9680maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 6293 ms 
+Ret: 0
+6.28user 0.01system 0:06.31elapsed 99%CPU (0avgtext+0avgdata 9832maxresident)k
+0inputs+0outputs (0major+1683minor)pagefaults 0swaps
+Timer - Multiplication: 6338 ms 
+Ret: 0
+6.26user 0.02system 0:06.36elapsed 98%CPU (0avgtext+0avgdata 9820maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 6322 ms 
+Ret: 0
+6.26user 0.01system 0:06.35elapsed 98%CPU (0avgtext+0avgdata 9748maxresident)k
+0inputs+8outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 6415 ms 
+Ret: 0
+6.25user 0.05system 0:06.43elapsed 97%CPU (0avgtext+0avgdata 9612maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 6297 ms 
+Ret: 0
+6.22user 0.08system 0:06.31elapsed 99%CPU (0avgtext+0avgdata 9756maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 6364 ms 
+Ret: 0
+6.27user 0.03system 0:06.38elapsed 98%CPU (0avgtext+0avgdata 9812maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 6364 ms 
+Ret: 0
+6.24user 0.05system 0:06.38elapsed 98%CPU (0avgtext+0avgdata 9744maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 6344 ms 
+Ret: 0
+6.30user 0.03system 0:06.36elapsed 99%CPU (0avgtext+0avgdata 9612maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 6402 ms 
+Ret: 0
+6.29user 0.03system 0:06.42elapsed 98%CPU (0avgtext+0avgdata 9688maxresident)k
+0inputs+8outputs (0major+1679minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 50540 ms 
+Ret: 0
+49.98user 0.27system 0:50.64elapsed 99%CPU (0avgtext+0avgdata 28284maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 51533 ms 
+Ret: 0
+50.32user 0.32system 0:51.62elapsed 98%CPU (0avgtext+0avgdata 28200maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 50138 ms 
+Ret: 0
+50.03user 0.17system 0:50.30elapsed 99%CPU (0avgtext+0avgdata 28200maxresident)k
+128inputs+8outputs (1major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 49809 ms 
+Ret: 0
+49.68user 0.15system 0:49.89elapsed 99%CPU (0avgtext+0avgdata 28192maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 50906 ms 
+Ret: 0
+50.44user 0.11system 0:51.01elapsed 99%CPU (0avgtext+0avgdata 28252maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 55051 ms 
+Ret: 0
+53.58user 0.20system 0:55.13elapsed 97%CPU (0avgtext+0avgdata 28240maxresident)k
+0inputs+8outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 57112 ms 
+Ret: 0
+55.16user 0.91system 0:57.19elapsed 98%CPU (0avgtext+0avgdata 28284maxresident)k
+0inputs+8outputs (0major+6305minor)pagefaults 0swaps
+Timer - Multiplication: 56237 ms 
+Ret: 0
+55.26user 0.20system 0:56.34elapsed 98%CPU (0avgtext+0avgdata 28284maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 50200 ms 
+Ret: 0
+50.03user 0.09system 0:50.28elapsed 99%CPU (0avgtext+0avgdata 28252maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 51424 ms 
+Ret: 0
+51.36user 0.08system 0:51.51elapsed 99%CPU (0avgtext+0avgdata 28064maxresident)k
+0inputs+8outputs (0major+6300minor)pagefaults 0swaps
+O3
+========================================================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3708maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3588maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3568maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 75%CPU (0avgtext+0avgdata 3644maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3424maxresident)k
+0inputs+0outputs (0major+152minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3428maxresident)k
+0inputs+0outputs (0major+152minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3676maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3532maxresident)k
+0inputs+0outputs (0major+153minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3568maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 75%CPU (0avgtext+0avgdata 3696maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3928maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 4004maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 3 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 83%CPU (0avgtext+0avgdata 3976maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3724maxresident)k
+0inputs+0outputs (0major+226minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3840maxresident)k
+0inputs+0outputs (0major+227minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3924maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3992maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3940maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3992maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3884maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 29 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 91%CPU (0avgtext+0avgdata 4988maxresident)k
+0inputs+0outputs (0major+494minor)pagefaults 0swaps
+Timer - Multiplication: 19 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 4844maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 31 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 100%CPU (0avgtext+0avgdata 5052maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 19 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 95%CPU (0avgtext+0avgdata 4772maxresident)k
+0inputs+0outputs (0major+488minor)pagefaults 0swaps
+Timer - Multiplication: 31 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 94%CPU (0avgtext+0avgdata 4772maxresident)k
+0inputs+0outputs (0major+489minor)pagefaults 0swaps
+Timer - Multiplication: 37 ms 
+Ret: 0
+0.04user 0.00system 0:00.04elapsed 97%CPU (0avgtext+0avgdata 4988maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 25 ms 
+Ret: 0
+0.02user 0.00system 0:00.03elapsed 90%CPU (0avgtext+0avgdata 5056maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 25 ms 
+Ret: 0
+0.02user 0.00system 0:00.03elapsed 86%CPU (0avgtext+0avgdata 4876maxresident)k
+0inputs+0outputs (0major+489minor)pagefaults 0swaps
+Timer - Multiplication: 26 ms 
+Ret: 0
+0.02user 0.00system 0:00.03elapsed 90%CPU (0avgtext+0avgdata 5056maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 23 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 92%CPU (0avgtext+0avgdata 4848maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 307 ms 
+Ret: 0
+0.30user 0.01system 0:00.31elapsed 98%CPU (0avgtext+0avgdata 9528maxresident)k
+0inputs+0outputs (0major+1677minor)pagefaults 0swaps
+Timer - Multiplication: 289 ms 
+Ret: 0
+0.29user 0.00system 0:00.30elapsed 98%CPU (0avgtext+0avgdata 9780maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 656 ms 
+Ret: 0
+0.65user 0.00system 0:00.67elapsed 98%CPU (0avgtext+0avgdata 9720maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 277 ms 
+Ret: 0
+0.27user 0.00system 0:00.28elapsed 97%CPU (0avgtext+0avgdata 9816maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 657 ms 
+Ret: 0
+0.65user 0.00system 0:00.67elapsed 98%CPU (0avgtext+0avgdata 9792maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 488 ms 
+Ret: 0
+0.48user 0.00system 0:00.50elapsed 97%CPU (0avgtext+0avgdata 9780maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 688 ms 
+Ret: 0
+0.69user 0.00system 0:00.70elapsed 99%CPU (0avgtext+0avgdata 9776maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 336 ms 
+Ret: 0
+0.33user 0.01system 0:00.34elapsed 98%CPU (0avgtext+0avgdata 9644maxresident)k
+0inputs+0outputs (0major+1678minor)pagefaults 0swaps
+Timer - Multiplication: 696 ms 
+Ret: 0
+0.69user 0.00system 0:00.70elapsed 99%CPU (0avgtext+0avgdata 9592maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 356 ms 
+Ret: 0
+0.33user 0.00system 0:00.36elapsed 92%CPU (0avgtext+0avgdata 9508maxresident)k
+0inputs+0outputs (0major+1676minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 5255 ms 
+Ret: 0
+5.16user 0.03system 0:05.30elapsed 97%CPU (0avgtext+0avgdata 28160maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 4277 ms 
+Ret: 0
+4.19user 0.04system 0:04.31elapsed 98%CPU (0avgtext+0avgdata 28300maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 4549 ms 
+Ret: 0
+4.48user 0.03system 0:04.58elapsed 98%CPU (0avgtext+0avgdata 28000maxresident)k
+0inputs+0outputs (0major+6299minor)pagefaults 0swaps
+Timer - Multiplication: 4900 ms 
+Ret: 0
+4.89user 0.03system 0:04.94elapsed 99%CPU (0avgtext+0avgdata 28212maxresident)k
+0inputs+0outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 4741 ms 
+Ret: 0
+4.70user 0.07system 0:04.78elapsed 99%CPU (0avgtext+0avgdata 28228maxresident)k
+0inputs+0outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 2638 ms 
+Ret: 0
+2.64user 0.02system 0:02.67elapsed 99%CPU (0avgtext+0avgdata 28272maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 1937 ms 
+Ret: 0
+1.92user 0.02system 0:01.97elapsed 99%CPU (0avgtext+0avgdata 28228maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 4522 ms 
+Ret: 0
+4.53user 0.02system 0:04.56elapsed 99%CPU (0avgtext+0avgdata 28236maxresident)k
+0inputs+0outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 1870 ms 
+Ret: 0
+1.88user 0.01system 0:01.90elapsed 99%CPU (0avgtext+0avgdata 28180maxresident)k
+0inputs+0outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 4482 ms 
+Ret: 0
+4.46user 0.05system 0:04.52elapsed 99%CPU (0avgtext+0avgdata 28244maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+BENCHMARKING OF mmulgp
+O0
+=======================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3480maxresident)k
+0inputs+0outputs (0major+152minor)pagefaults 0swaps
+Timer - Multiplication: 13 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3644maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3616maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3480maxresident)k
+0inputs+0outputs (0major+152minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3604maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3616maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3644maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3640maxresident)k
+0inputs+0outputs (0major+158minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3652maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 12 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 93%CPU (0avgtext+0avgdata 3704maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.09user 0.00system 0:00.10elapsed 100%CPU (0avgtext+0avgdata 3948maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 98 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 98%CPU (0avgtext+0avgdata 3896maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 100 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 97%CPU (0avgtext+0avgdata 3888maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 97 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 100%CPU (0avgtext+0avgdata 3980maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 97 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 99%CPU (0avgtext+0avgdata 4016maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 98 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 98%CPU (0avgtext+0avgdata 4012maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 98 ms 
+Ret: 0
+0.09user 0.00system 0:00.10elapsed 98%CPU (0avgtext+0avgdata 3892maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 96 ms 
+Ret: 0
+0.09user 0.00system 0:00.09elapsed 100%CPU (0avgtext+0avgdata 3948maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 97 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 99%CPU (0avgtext+0avgdata 3900maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 97 ms 
+Ret: 0
+0.10user 0.00system 0:00.10elapsed 99%CPU (0avgtext+0avgdata 3776maxresident)k
+0inputs+0outputs (0major+226minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 689 ms 
+Ret: 0
+0.69user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4824maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 698 ms 
+Ret: 0
+0.69user 0.00system 0:00.70elapsed 98%CPU (0avgtext+0avgdata 4940maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 685 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 5064maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 695 ms 
+Ret: 0
+0.70user 0.00system 0:00.70elapsed 99%CPU (0avgtext+0avgdata 5068maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 684 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4956maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 695 ms 
+Ret: 0
+0.69user 0.00system 0:00.70elapsed 99%CPU (0avgtext+0avgdata 4960maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 684 ms 
+Ret: 0
+0.68user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 4996maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 688 ms 
+Ret: 0
+0.69user 0.00system 0:00.69elapsed 99%CPU (0avgtext+0avgdata 5028maxresident)k
+0inputs+8outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 695 ms 
+Ret: 0
+0.69user 0.00system 0:00.70elapsed 99%CPU (0avgtext+0avgdata 4940maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 694 ms 
+Ret: 0
+0.69user 0.00system 0:00.70elapsed 99%CPU (0avgtext+0avgdata 4960maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 7148 ms 
+Ret: 0
+6.32user 0.03system 0:07.17elapsed 88%CPU (0avgtext+0avgdata 9816maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 6396 ms 
+Ret: 0
+6.34user 0.01system 0:06.42elapsed 99%CPU (0avgtext+0avgdata 9600maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 6251 ms 
+Ret: 0
+6.23user 0.01system 0:06.27elapsed 99%CPU (0avgtext+0avgdata 9748maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 6319 ms 
+Ret: 0
+6.28user 0.03system 0:06.34elapsed 99%CPU (0avgtext+0avgdata 9784maxresident)k
+0inputs+8outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 6285 ms 
+Ret: 0
+6.26user 0.04system 0:06.30elapsed 99%CPU (0avgtext+0avgdata 9696maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 6262 ms 
+Ret: 0
+6.27user 0.00system 0:06.28elapsed 99%CPU (0avgtext+0avgdata 9696maxresident)k
+0inputs+0outputs (0major+1679minor)pagefaults 0swaps
+Timer - Multiplication: 6349 ms 
+Ret: 0
+6.28user 0.02system 0:06.37elapsed 98%CPU (0avgtext+0avgdata 9784maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 6335 ms 
+Ret: 0
+6.30user 0.01system 0:06.36elapsed 99%CPU (0avgtext+0avgdata 9600maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 6256 ms 
+Ret: 0
+6.24user 0.01system 0:06.28elapsed 99%CPU (0avgtext+0avgdata 9724maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 6334 ms 
+Ret: 0
+6.30user 0.01system 0:06.35elapsed 99%CPU (0avgtext+0avgdata 9596maxresident)k
+0inputs+8outputs (0major+1679minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 50345 ms 
+Ret: 0
+50.20user 0.07system 0:50.43elapsed 99%CPU (0avgtext+0avgdata 28208maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 50398 ms 
+Ret: 0
+50.05user 0.13system 0:50.48elapsed 99%CPU (0avgtext+0avgdata 28196maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 59060 ms 
+Ret: 0
+58.14user 0.07system 0:59.15elapsed 98%CPU (0avgtext+0avgdata 28096maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 80420 ms 
+Ret: 0
+78.31user 0.17system 1:20.54elapsed 97%CPU (0avgtext+0avgdata 28244maxresident)k
+0inputs+8outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 70771 ms 
+Ret: 0
+70.37user 0.09system 1:10.97elapsed 99%CPU (0avgtext+0avgdata 28280maxresident)k
+0inputs+8outputs (0major+6305minor)pagefaults 0swaps
+Timer - Multiplication: 80527 ms 
+Ret: 0
+79.65user 0.17system 1:20.64elapsed 98%CPU (0avgtext+0avgdata 28296maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 66471 ms 
+Ret: 0
+66.26user 0.11system 1:06.55elapsed 99%CPU (0avgtext+0avgdata 28232maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 88336 ms 
+Ret: 0
+86.95user 0.58system 1:28.44elapsed 98%CPU (0avgtext+0avgdata 28232maxresident)k
+0inputs+8outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 82450 ms 
+Ret: 0
+81.45user 0.42system 1:22.72elapsed 98%CPU (0avgtext+0avgdata 28292maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 81927 ms 
+Ret: 0
+80.57user 0.42system 1:22.10elapsed 98%CPU (0avgtext+0avgdata 28092maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+O3
+========================================================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3400maxresident)k
+0inputs+0outputs (0major+151minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3540maxresident)k
+0inputs+0outputs (0major+153minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3488maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3528maxresident)k
+0inputs+0outputs (0major+153minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3496maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3528maxresident)k
+0inputs+0outputs (0major+153minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3616maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3536maxresident)k
+0inputs+0outputs (0major+153minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3692maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3672maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 4008maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3928maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3864maxresident)k
+0inputs+0outputs (0major+232minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3836maxresident)k
+0inputs+0outputs (0major+227minor)pagefaults 0swaps
+Timer - Multiplication: 3 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3720maxresident)k
+0inputs+0outputs (0major+227minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3928maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 83%CPU (0avgtext+0avgdata 3860maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3788maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 83%CPU (0avgtext+0avgdata 3876maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3720maxresident)k
+0inputs+0outputs (0major+227minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 24 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 4928maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 20 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 95%CPU (0avgtext+0avgdata 5016maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 26 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 96%CPU (0avgtext+0avgdata 4968maxresident)k
+0inputs+0outputs (0major+494minor)pagefaults 0swaps
+Timer - Multiplication: 21 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 92%CPU (0avgtext+0avgdata 4748maxresident)k
+0inputs+8outputs (0major+487minor)pagefaults 0swaps
+Timer - Multiplication: 30 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 89%CPU (0avgtext+0avgdata 4928maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 18 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 4984maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 18 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 95%CPU (0avgtext+0avgdata 4924maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 20 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 95%CPU (0avgtext+0avgdata 4748maxresident)k
+0inputs+0outputs (0major+488minor)pagefaults 0swaps
+Timer - Multiplication: 18 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 91%CPU (0avgtext+0avgdata 4972maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 25 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 4972maxresident)k
+0inputs+0outputs (0major+494minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 255 ms 
+Ret: 0
+0.25user 0.00system 0:00.26elapsed 98%CPU (0avgtext+0avgdata 9640maxresident)k
+0inputs+0outputs (0major+1678minor)pagefaults 0swaps
+Timer - Multiplication: 616 ms 
+Ret: 0
+0.61user 0.01system 0:00.62elapsed 99%CPU (0avgtext+0avgdata 9664maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 655 ms 
+Ret: 0
+0.65user 0.00system 0:00.66elapsed 98%CPU (0avgtext+0avgdata 9732maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 280 ms 
+Ret: 0
+0.27user 0.00system 0:00.29elapsed 96%CPU (0avgtext+0avgdata 9504maxresident)k
+0inputs+0outputs (0major+1676minor)pagefaults 0swaps
+Timer - Multiplication: 640 ms 
+Ret: 0
+0.63user 0.00system 0:00.65elapsed 98%CPU (0avgtext+0avgdata 9636maxresident)k
+0inputs+0outputs (0major+1678minor)pagefaults 0swaps
+Timer - Multiplication: 263 ms 
+Ret: 0
+0.26user 0.00system 0:00.27elapsed 98%CPU (0avgtext+0avgdata 9636maxresident)k
+0inputs+0outputs (0major+1678minor)pagefaults 0swaps
+Timer - Multiplication: 623 ms 
+Ret: 0
+0.62user 0.00system 0:00.63elapsed 99%CPU (0avgtext+0avgdata 9664maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 262 ms 
+Ret: 0
+0.26user 0.00system 0:00.27elapsed 97%CPU (0avgtext+0avgdata 9684maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 618 ms 
+Ret: 0
+0.61user 0.01system 0:00.62elapsed 98%CPU (0avgtext+0avgdata 9812maxresident)k
+0inputs+0outputs (0major+1683minor)pagefaults 0swaps
+Timer - Multiplication: 266 ms 
+Ret: 0
+0.26user 0.00system 0:00.27elapsed 97%CPU (0avgtext+0avgdata 9808maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 4663 ms 
+Ret: 0
+4.60user 0.06system 0:04.71elapsed 98%CPU (0avgtext+0avgdata 28300maxresident)k
+0inputs+8outputs (0major+6305minor)pagefaults 0swaps
+Timer - Multiplication: 8901 ms 
+Ret: 0
+8.75user 0.09system 0:09.01elapsed 98%CPU (0avgtext+0avgdata 28080maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 2362 ms 
+Ret: 0
+2.35user 0.02system 0:02.39elapsed 99%CPU (0avgtext+0avgdata 28220maxresident)k
+0inputs+0outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 1948 ms 
+Ret: 0
+1.95user 0.02system 0:01.98elapsed 99%CPU (0avgtext+0avgdata 28016maxresident)k
+0inputs+0outputs (0major+6301minor)pagefaults 0swaps
+Timer - Multiplication: 4062 ms 
+Ret: 0
+4.04user 0.03system 0:04.10elapsed 99%CPU (0avgtext+0avgdata 28164maxresident)k
+0inputs+0outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 4607 ms 
+Ret: 0
+4.54user 0.04system 0:04.64elapsed 98%CPU (0avgtext+0avgdata 28088maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 4509 ms 
+Ret: 0
+4.44user 0.06system 0:04.55elapsed 98%CPU (0avgtext+0avgdata 28080maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 3504 ms 
+Ret: 0
+3.48user 0.03system 0:03.53elapsed 99%CPU (0avgtext+0avgdata 28284maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 4806 ms 
+Ret: 0
+4.77user 0.05system 0:04.84elapsed 99%CPU (0avgtext+0avgdata 28224maxresident)k
+0inputs+8outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 3066 ms 
+Ret: 0
+2.88user 0.05system 0:03.11elapsed 94%CPU (0avgtext+0avgdata 28232maxresident)k
+0inputs+0outputs (0major+6303minor)pagefaults 0swaps
+BENCHMARKING OF mmulgp
+O0
+=======================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 66 ms 
+Ret: 0
+0.03user 0.00system 0:00.08elapsed 43%CPU (0avgtext+0avgdata 3688maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 39 ms 
+Ret: 0
+0.03user 0.00system 0:00.05elapsed 70%CPU (0avgtext+0avgdata 3704maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 31 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 89%CPU (0avgtext+0avgdata 3724maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 29 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 94%CPU (0avgtext+0avgdata 3716maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 30 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 94%CPU (0avgtext+0avgdata 3652maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 44 ms 
+Ret: 0
+0.03user 0.00system 0:00.05elapsed 61%CPU (0avgtext+0avgdata 3652maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 33 ms 
+Ret: 0
+0.03user 0.00system 0:00.04elapsed 78%CPU (0avgtext+0avgdata 3640maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 56 ms 
+Ret: 0
+0.03user 0.00system 0:00.06elapsed 52%CPU (0avgtext+0avgdata 3644maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 48 ms 
+Ret: 0
+0.03user 0.00system 0:00.05elapsed 63%CPU (0avgtext+0avgdata 3596maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 34 ms 
+Ret: 0
+0.03user 0.00system 0:00.04elapsed 81%CPU (0avgtext+0avgdata 3604maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 255 ms 
+Ret: 0
+0.22user 0.01system 0:00.26elapsed 90%CPU (0avgtext+0avgdata 3892maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 247 ms 
+Ret: 0
+0.22user 0.00system 0:00.25elapsed 91%CPU (0avgtext+0avgdata 3984maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 238 ms 
+Ret: 0
+0.23user 0.00system 0:00.24elapsed 94%CPU (0avgtext+0avgdata 3796maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 236 ms 
+Ret: 0
+0.22user 0.01system 0:00.24elapsed 95%CPU (0avgtext+0avgdata 3796maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 274 ms 
+Ret: 0
+0.22user 0.02system 0:00.29elapsed 82%CPU (0avgtext+0avgdata 3900maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 264 ms 
+Ret: 0
+0.23user 0.00system 0:00.27elapsed 86%CPU (0avgtext+0avgdata 3892maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 335 ms 
+Ret: 0
+0.24user 0.00system 0:00.35elapsed 69%CPU (0avgtext+0avgdata 4012maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 249 ms 
+Ret: 0
+0.23user 0.00system 0:00.26elapsed 91%CPU (0avgtext+0avgdata 3868maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 280 ms 
+Ret: 0
+0.23user 0.00system 0:00.29elapsed 79%CPU (0avgtext+0avgdata 3948maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 254 ms 
+Ret: 0
+0.23user 0.00system 0:00.26elapsed 90%CPU (0avgtext+0avgdata 3932maxresident)k
+0inputs+0outputs (0major+232minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 1775 ms 
+Ret: 0
+1.62user 0.03system 0:01.79elapsed 92%CPU (0avgtext+0avgdata 4948maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 1843 ms 
+Ret: 0
+1.62user 0.02system 0:01.86elapsed 88%CPU (0avgtext+0avgdata 4996maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 1624 ms 
+Ret: 0
+1.59user 0.01system 0:01.64elapsed 98%CPU (0avgtext+0avgdata 4960maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 1612 ms 
+Ret: 0
+1.60user 0.02system 0:01.63elapsed 99%CPU (0avgtext+0avgdata 4972maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 1621 ms 
+Ret: 0
+1.61user 0.02system 0:01.64elapsed 99%CPU (0avgtext+0avgdata 4992maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 1632 ms 
+Ret: 0
+1.60user 0.02system 0:01.65elapsed 98%CPU (0avgtext+0avgdata 4996maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 1627 ms 
+Ret: 0
+1.60user 0.02system 0:01.64elapsed 99%CPU (0avgtext+0avgdata 4960maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 1591 ms 
+Ret: 0
+1.59user 0.00system 0:01.60elapsed 99%CPU (0avgtext+0avgdata 5068maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 1594 ms 
+Ret: 0
+1.59user 0.01system 0:01.62elapsed 98%CPU (0avgtext+0avgdata 4940maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 1579 ms 
+Ret: 0
+1.58user 0.00system 0:01.59elapsed 99%CPU (0avgtext+0avgdata 4824maxresident)k
+0inputs+0outputs (0major+488minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 7252 ms 
+Ret: 0
+7.26user 0.01system 0:07.30elapsed 99%CPU (0avgtext+0avgdata 9824maxresident)k
+0inputs+8outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 7970 ms 
+Ret: 0
+7.95user 0.01system 0:07.99elapsed 99%CPU (0avgtext+0avgdata 9744maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 11261 ms 
+Ret: 0
+11.21user 0.02system 0:11.28elapsed 99%CPU (0avgtext+0avgdata 9800maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 6292 ms 
+Ret: 0
+6.29user 0.01system 0:06.31elapsed 99%CPU (0avgtext+0avgdata 9744maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 11242 ms 
+Ret: 0
+11.25user 0.00system 0:11.26elapsed 99%CPU (0avgtext+0avgdata 9820maxresident)k
+0inputs+8outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 9575 ms 
+Ret: 0
+9.58user 0.00system 0:09.59elapsed 99%CPU (0avgtext+0avgdata 9812maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 9537 ms 
+Ret: 0
+9.54user 0.01system 0:09.55elapsed 99%CPU (0avgtext+0avgdata 9716maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 6297 ms 
+Ret: 0
+6.31user 0.00system 0:06.32elapsed 99%CPU (0avgtext+0avgdata 9704maxresident)k
+0inputs+0outputs (0major+1679minor)pagefaults 0swaps
+Timer - Multiplication: 11267 ms 
+Ret: 0
+11.24user 0.01system 0:11.29elapsed 99%CPU (0avgtext+0avgdata 9580maxresident)k
+0inputs+8outputs (0major+1678minor)pagefaults 0swaps
+Timer - Multiplication: 11237 ms 
+Ret: 0
+11.24user 0.00system 0:11.25elapsed 99%CPU (0avgtext+0avgdata 9804maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 78574 ms 
+Ret: 0
+78.18user 0.12system 1:18.66elapsed 99%CPU (0avgtext+0avgdata 28196maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 99493 ms 
+Ret: 0
+97.40user 0.46system 1:39.58elapsed 98%CPU (0avgtext+0avgdata 28088maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 112991 ms 
+Ret: 0
+107.99user 1.18system 1:53.19elapsed 96%CPU (0avgtext+0avgdata 28092maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 78432 ms 
+Ret: 0
+77.53user 0.41system 1:18.64elapsed 99%CPU (0avgtext+0avgdata 28204maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 90163 ms 
+Ret: 0
+86.44user 0.64system 1:30.24elapsed 96%CPU (0avgtext+0avgdata 28096maxresident)k
+0inputs+8outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 76317 ms 
+Ret: 0
+75.40user 0.38system 1:16.42elapsed 99%CPU (0avgtext+0avgdata 28168maxresident)k
+0inputs+8outputs (0major+6305minor)pagefaults 0swaps
+Timer - Multiplication: 85097 ms 
+Ret: 0
+83.37user 0.26system 1:25.28elapsed 98%CPU (0avgtext+0avgdata 28204maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 79375 ms 
+Ret: 0
+78.34user 0.55system 1:19.48elapsed 99%CPU (0avgtext+0avgdata 28168maxresident)k
+0inputs+8outputs (0major+6305minor)pagefaults 0swaps
+Timer - Multiplication: 86157 ms 
+Ret: 0
+84.74user 0.21system 1:26.37elapsed 98%CPU (0avgtext+0avgdata 28232maxresident)k
+0inputs+8outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 86146 ms 
+Ret: 0
+84.11user 0.30system 1:26.34elapsed 97%CPU (0avgtext+0avgdata 28088maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+O3
+========================================================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3404maxresident)k
+0inputs+0outputs (0major+151minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 66%CPU (0avgtext+0avgdata 3564maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 60%CPU (0avgtext+0avgdata 3628maxresident)k
+0inputs+0outputs (0major+158minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3676maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 50%CPU (0avgtext+0avgdata 3528maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3492maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 66%CPU (0avgtext+0avgdata 3712maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 1 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 50%CPU (0avgtext+0avgdata 3616maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 66%CPU (0avgtext+0avgdata 3564maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3704maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 3 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 50%CPU (0avgtext+0avgdata 3924maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3784maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3860maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 6 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 55%CPU (0avgtext+0avgdata 3792maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3984maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 3 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 57%CPU (0avgtext+0avgdata 4008maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 66%CPU (0avgtext+0avgdata 3780maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3988maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 83%CPU (0avgtext+0avgdata 3696maxresident)k
+0inputs+0outputs (0major+225minor)pagefaults 0swaps
+Timer - Multiplication: 2 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3880maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 34 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 89%CPU (0avgtext+0avgdata 4840maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 28 ms 
+Ret: 0
+0.03user 0.00system 0:00.03elapsed 90%CPU (0avgtext+0avgdata 5084maxresident)k
+0inputs+0outputs (0major+494minor)pagefaults 0swaps
+Timer - Multiplication: 37 ms 
+Ret: 0
+0.03user 0.00system 0:00.04elapsed 92%CPU (0avgtext+0avgdata 4976maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 24 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 92%CPU (0avgtext+0avgdata 5020maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 23 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 96%CPU (0avgtext+0avgdata 4908maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 22 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 4928maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 24 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 92%CPU (0avgtext+0avgdata 4748maxresident)k
+0inputs+0outputs (0major+487minor)pagefaults 0swaps
+Timer - Multiplication: 22 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 96%CPU (0avgtext+0avgdata 4976maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 21 ms 
+Ret: 0
+0.02user 0.00system 0:00.02elapsed 96%CPU (0avgtext+0avgdata 5036maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 22 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 96%CPU (0avgtext+0avgdata 4972maxresident)k
+0inputs+0outputs (0major+494minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 287 ms 
+Ret: 0
+0.28user 0.01system 0:00.29elapsed 97%CPU (0avgtext+0avgdata 9788maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 646 ms 
+Ret: 0
+0.62user 0.00system 0:00.65elapsed 96%CPU (0avgtext+0avgdata 9792maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 700 ms 
+Ret: 0
+0.70user 0.00system 0:00.71elapsed 99%CPU (0avgtext+0avgdata 9804maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 665 ms 
+Ret: 0
+0.66user 0.01system 0:00.67elapsed 99%CPU (0avgtext+0avgdata 9588maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 271 ms 
+Ret: 0
+0.26user 0.00system 0:00.28elapsed 96%CPU (0avgtext+0avgdata 9724maxresident)k
+0inputs+0outputs (0major+1683minor)pagefaults 0swaps
+Timer - Multiplication: 624 ms 
+Ret: 0
+0.63user 0.00system 0:00.63elapsed 99%CPU (0avgtext+0avgdata 9812maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 263 ms 
+Ret: 0
+0.25user 0.00system 0:00.27elapsed 97%CPU (0avgtext+0avgdata 9668maxresident)k
+0inputs+0outputs (0major+1683minor)pagefaults 0swaps
+Timer - Multiplication: 275 ms 
+Ret: 0
+0.26user 0.00system 0:00.28elapsed 96%CPU (0avgtext+0avgdata 9520maxresident)k
+0inputs+0outputs (0major+1678minor)pagefaults 0swaps
+Timer - Multiplication: 622 ms 
+Ret: 0
+0.61user 0.01system 0:00.63elapsed 98%CPU (0avgtext+0avgdata 9728maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 273 ms 
+Ret: 0
+0.27user 0.00system 0:00.28elapsed 97%CPU (0avgtext+0avgdata 9736maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 4805 ms 
+Ret: 0
+4.78user 0.04system 0:04.84elapsed 99%CPU (0avgtext+0avgdata 28088maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 4645 ms 
+Ret: 0
+4.63user 0.03system 0:04.68elapsed 99%CPU (0avgtext+0avgdata 28268maxresident)k
+0inputs+0outputs (0major+6305minor)pagefaults 0swaps
+Timer - Multiplication: 4751 ms 
+Ret: 0
+4.73user 0.03system 0:04.78elapsed 99%CPU (0avgtext+0avgdata 28132maxresident)k
+0inputs+0outputs (0major+6301minor)pagefaults 0swaps
+Timer - Multiplication: 4960 ms 
+Ret: 0
+4.92user 0.05system 0:05.00elapsed 99%CPU (0avgtext+0avgdata 28216maxresident)k
+0inputs+0outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 4638 ms 
+Ret: 0
+4.61user 0.02system 0:04.67elapsed 99%CPU (0avgtext+0avgdata 28232maxresident)k
+0inputs+8outputs (0major+6303minor)pagefaults 0swaps
+Timer - Multiplication: 4703 ms 
+Ret: 0
+4.66user 0.03system 0:04.74elapsed 99%CPU (0avgtext+0avgdata 28116maxresident)k
+0inputs+0outputs (0major+6301minor)pagefaults 0swaps
+Timer - Multiplication: 5637 ms 
+Ret: 0
+5.29user 0.05system 0:05.69elapsed 93%CPU (0avgtext+0avgdata 28088maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 12849 ms 
+Ret: 0
+12.39user 0.20system 0:12.95elapsed 97%CPU (0avgtext+0avgdata 28012maxresident)k
+0inputs+8outputs (0major+6301minor)pagefaults 0swaps
+Timer - Multiplication: 8178 ms 
+Ret: 0
+7.98user 0.15system 0:08.28elapsed 98%CPU (0avgtext+0avgdata 28220maxresident)k
+0inputs+0outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 2099 ms 
+Ret: 0
+2.05user 0.02system 0:02.13elapsed 97%CPU (0avgtext+0avgdata 28304maxresident)k
+0inputs+0outputs (0major+6305minor)pagefaults 0swaps
+BENCHMARKING OF mmulgp
+O0
+=======================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 62 ms 
+Ret: 0
+0.03user 0.00system 0:00.07elapsed 48%CPU (0avgtext+0avgdata 3652maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 42 ms 
+Ret: 0
+0.03user 0.00system 0:00.05elapsed 62%CPU (0avgtext+0avgdata 3628maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 38 ms 
+Ret: 0
+0.03user 0.00system 0:00.05elapsed 74%CPU (0avgtext+0avgdata 3508maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 36 ms 
+Ret: 0
+0.03user 0.00system 0:00.04elapsed 75%CPU (0avgtext+0avgdata 3720maxresident)k
+0inputs+0outputs (0major+158minor)pagefaults 0swaps
+Timer - Multiplication: 34 ms 
+Ret: 0
+0.02user 0.00system 0:00.04elapsed 76%CPU (0avgtext+0avgdata 3644maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 40 ms 
+Ret: 0
+0.03user 0.00system 0:00.05elapsed 67%CPU (0avgtext+0avgdata 3652maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 48 ms 
+Ret: 0
+0.03user 0.00system 0:00.06elapsed 60%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+Timer - Multiplication: 35 ms 
+Ret: 0
+0.03user 0.00system 0:00.04elapsed 82%CPU (0avgtext+0avgdata 3684maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 70 ms 
+Ret: 0
+0.03user 0.00system 0:00.08elapsed 43%CPU (0avgtext+0avgdata 3596maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 48 ms 
+Ret: 0
+0.03user 0.00system 0:00.05elapsed 63%CPU (0avgtext+0avgdata 3480maxresident)k
+0inputs+0outputs (0major+152minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 272 ms 
+Ret: 0
+0.23user 0.00system 0:00.29elapsed 81%CPU (0avgtext+0avgdata 3924maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 226 ms 
+Ret: 0
+0.22user 0.00system 0:00.23elapsed 97%CPU (0avgtext+0avgdata 4016maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 230 ms 
+Ret: 0
+0.22user 0.00system 0:00.24elapsed 97%CPU (0avgtext+0avgdata 3796maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 305 ms 
+Ret: 0
+0.23user 0.00system 0:00.31elapsed 75%CPU (0avgtext+0avgdata 3776maxresident)k
+0inputs+0outputs (0major+226minor)pagefaults 0swaps
+Timer - Multiplication: 238 ms 
+Ret: 0
+0.23user 0.00system 0:00.25elapsed 93%CPU (0avgtext+0avgdata 3892maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 311 ms 
+Ret: 0
+0.24user 0.00system 0:00.33elapsed 72%CPU (0avgtext+0avgdata 3796maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 251 ms 
+Ret: 0
+0.22user 0.00system 0:00.26elapsed 89%CPU (0avgtext+0avgdata 3984maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 313 ms 
+Ret: 0
+0.23user 0.00system 0:00.34elapsed 69%CPU (0avgtext+0avgdata 3924maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 240 ms 
+Ret: 0
+0.23user 0.00system 0:00.25elapsed 94%CPU (0avgtext+0avgdata 3948maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 248 ms 
+Ret: 0
+0.23user 0.00system 0:00.26elapsed 92%CPU (0avgtext+0avgdata 3776maxresident)k
+0inputs+0outputs (0major+226minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 1734 ms 
+Ret: 0
+1.62user 0.02system 0:01.75elapsed 93%CPU (0avgtext+0avgdata 4920maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 1674 ms 
+Ret: 0
+1.61user 0.02system 0:01.69elapsed 96%CPU (0avgtext+0avgdata 5028maxresident)k
+0inputs+0outputs (0major+494minor)pagefaults 0swaps
+Timer - Multiplication: 1641 ms 
+Ret: 0
+1.59user 0.00system 0:01.65elapsed 96%CPU (0avgtext+0avgdata 4936maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 1637 ms 
+Ret: 0
+1.59user 0.00system 0:01.65elapsed 96%CPU (0avgtext+0avgdata 4940maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 1647 ms 
+Ret: 0
+1.59user 0.01system 0:01.66elapsed 96%CPU (0avgtext+0avgdata 4852maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 1639 ms 
+Ret: 0
+1.60user 0.00system 0:01.66elapsed 96%CPU (0avgtext+0avgdata 4984maxresident)k
+0inputs+0outputs (0major+494minor)pagefaults 0swaps
+Timer - Multiplication: 1694 ms 
+Ret: 0
+1.59user 0.01system 0:01.71elapsed 94%CPU (0avgtext+0avgdata 4944maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 1686 ms 
+Ret: 0
+1.62user 0.00system 0:01.70elapsed 95%CPU (0avgtext+0avgdata 4844maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 1867 ms 
+Ret: 0
+1.61user 0.02system 0:01.89elapsed 86%CPU (0avgtext+0avgdata 5044maxresident)k
+0inputs+8outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 1647 ms 
+Ret: 0
+1.61user 0.01system 0:01.66elapsed 97%CPU (0avgtext+0avgdata 4920maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 12819 ms 
+Ret: 0
+12.46user 0.08system 0:12.87elapsed 97%CPU (0avgtext+0avgdata 9816maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 13606 ms 
+Ret: 0
+12.82user 0.05system 0:13.63elapsed 94%CPU (0avgtext+0avgdata 9600maxresident)k
+0inputs+0outputs (0major+1679minor)pagefaults 0swaps
+Timer - Multiplication: 15623 ms 
+Ret: 0
+14.54user 0.07system 0:15.69elapsed 93%CPU (0avgtext+0avgdata 9752maxresident)k
+0inputs+8outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 14972 ms 
+Ret: 0
+14.48user 0.13system 0:15.02elapsed 97%CPU (0avgtext+0avgdata 9600maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 15435 ms 
+Ret: 0
+14.47user 0.09system 0:15.50elapsed 93%CPU (0avgtext+0avgdata 9692maxresident)k
+0inputs+0outputs (0major+1679minor)pagefaults 0swaps
+Timer - Multiplication: 14859 ms 
+Ret: 0
+14.49user 0.15system 0:14.94elapsed 98%CPU (0avgtext+0avgdata 9608maxresident)k
+0inputs+8outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 14971 ms 
+Ret: 0
+14.52user 0.08system 0:15.04elapsed 97%CPU (0avgtext+0avgdata 9744maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 15341 ms 
+Ret: 0
+14.47user 0.03system 0:15.40elapsed 94%CPU (0avgtext+0avgdata 9684maxresident)k
+0inputs+0outputs (0major+1683minor)pagefaults 0swaps
+Timer - Multiplication: 15363 ms 
+Ret: 0
+14.51user 0.09system 0:15.44elapsed 94%CPU (0avgtext+0avgdata 9608maxresident)k
+0inputs+8outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 15413 ms 
+Ret: 0
+14.43user 0.08system 0:15.47elapsed 93%CPU (0avgtext+0avgdata 9608maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 107814 ms 
+Ret: 0
+104.17user 0.52system 1:48.08elapsed 96%CPU (0avgtext+0avgdata 28304maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 111292 ms 
+Ret: 0
+108.11user 0.65system 1:51.56elapsed 97%CPU (0avgtext+0avgdata 28088maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Command terminated by signal 2
+33.42user 0.39system 0:35.54elapsed 95%CPU (0avgtext+0avgdata 27708maxresident)k
+0inputs+0outputs (0major+6295minor)pagefaults 0swaps
+Timer - Multiplication: 147403 ms 
+Ret: 0
+114.89user 0.73system 2:27.62elapsed 78%CPU (0avgtext+0avgdata 28208maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 159285 ms 
+Ret: 0
+114.81user 1.02system 2:39.64elapsed 72%CPU (0avgtext+0avgdata 28168maxresident)k
+0inputs+8outputs (0major+6305minor)pagefaults 0swaps
+Timer - Multiplication: 224491 ms 
+Ret: 0
+116.29user 1.40system 3:44.89elapsed 52%CPU (0avgtext+0avgdata 28220maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 212392 ms 
+Ret: 0
+116.02user 1.27system 3:32.78elapsed 55%CPU (0avgtext+0avgdata 28192maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 129573 ms 
+Ret: 0
+114.70user 0.50system 2:09.80elapsed 88%CPU (0avgtext+0avgdata 28184maxresident)k
+0inputs+8outputs (0major+6302minor)pagefaults 0swaps
+Timer - Multiplication: 225107 ms 
+Ret: 0
+116.24user 1.35system 3:45.34elapsed 52%CPU (0avgtext+0avgdata 28228maxresident)k
+0inputs+8outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 174793 ms 
+Ret: 0
+115.04user 1.09system 2:55.16elapsed 66%CPU (0avgtext+0avgdata 28216maxresident)k
+0inputs+8outputs (0major+6303minor)pagefaults 0swaps
+O3
+========================================================================
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3628maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3540maxresident)k
+0inputs+0outputs (0major+154minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 85%CPU (0avgtext+0avgdata 3712maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 85%CPU (0avgtext+0avgdata 3628maxresident)k
+0inputs+0outputs (0major+158minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.01elapsed 60%CPU (0avgtext+0avgdata 3424maxresident)k
+0inputs+0outputs (0major+153minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3616maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 85%CPU (0avgtext+0avgdata 3708maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3616maxresident)k
+0inputs+0outputs (0major+155minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3404maxresident)k
+0inputs+0outputs (0major+151minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3564maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 6 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 100%CPU (0avgtext+0avgdata 3796maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 6 ms 
+Ret: 0
+0.00user 0.00system 0:00.01elapsed 92%CPU (0avgtext+0avgdata 3972maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 25 ms 
+Ret: 0
+0.01user 0.00system 0:00.04elapsed 28%CPU (0avgtext+0avgdata 3924maxresident)k
+0inputs+0outputs (0major+232minor)pagefaults 0swaps
+Timer - Multiplication: 7 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 42%CPU (0avgtext+0avgdata 3908maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 10 ms 
+Ret: 0
+0.00user 0.00system 0:00.02elapsed 57%CPU (0avgtext+0avgdata 3792maxresident)k
+0inputs+0outputs (0major+230minor)pagefaults 0swaps
+Timer - Multiplication: 7 ms 
+Ret: 0
+0.01user 0.00system 0:00.01elapsed 86%CPU (0avgtext+0avgdata 3880maxresident)k
+0inputs+0outputs (0major+229minor)pagefaults 0swaps
+Timer - Multiplication: 8 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 56%CPU (0avgtext+0avgdata 3836maxresident)k
+0inputs+0outputs (0major+227minor)pagefaults 0swaps
+Timer - Multiplication: 10 ms 
+Ret: 0
+0.01user 0.00system 0:00.02elapsed 54%CPU (0avgtext+0avgdata 4008maxresident)k
+0inputs+0outputs (0major+231minor)pagefaults 0swaps
+Timer - Multiplication: 13 ms 
+Ret: 0
+0.00user 0.00system 0:00.03elapsed 33%CPU (0avgtext+0avgdata 3820maxresident)k
+0inputs+0outputs (0major+228minor)pagefaults 0swaps
+Timer - Multiplication: 6 ms 
+Ret: 0
+0.00user 0.00system 0:00.02elapsed 60%CPU (0avgtext+0avgdata 3828maxresident)k
+0inputs+0outputs (0major+227minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 246: 
+Timer - Multiplication: 79 ms 
+Ret: 0
+0.04user 0.01system 0:00.10elapsed 55%CPU (0avgtext+0avgdata 4832maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 67 ms 
+Ret: 0
+0.04user 0.01system 0:00.08elapsed 68%CPU (0avgtext+0avgdata 4880maxresident)k
+0inputs+0outputs (0major+489minor)pagefaults 0swaps
+Timer - Multiplication: 77 ms 
+Ret: 0
+0.06user 0.00system 0:00.11elapsed 60%CPU (0avgtext+0avgdata 4768maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 44 ms 
+Ret: 0
+0.04user 0.00system 0:00.05elapsed 96%CPU (0avgtext+0avgdata 5048maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 98 ms 
+Ret: 0
+0.04user 0.00system 0:00.10elapsed 49%CPU (0avgtext+0avgdata 4884maxresident)k
+0inputs+0outputs (0major+489minor)pagefaults 0swaps
+Timer - Multiplication: 45 ms 
+Ret: 0
+0.04user 0.00system 0:00.05elapsed 94%CPU (0avgtext+0avgdata 5036maxresident)k
+0inputs+0outputs (0major+492minor)pagefaults 0swaps
+Timer - Multiplication: 80 ms 
+Ret: 0
+0.04user 0.01system 0:00.10elapsed 52%CPU (0avgtext+0avgdata 4828maxresident)k
+0inputs+0outputs (0major+493minor)pagefaults 0swaps
+Timer - Multiplication: 55 ms 
+Ret: 0
+0.05user 0.00system 0:00.07elapsed 72%CPU (0avgtext+0avgdata 4928maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+Timer - Multiplication: 46 ms 
+Ret: 0
+0.04user 0.01system 0:00.07elapsed 75%CPU (0avgtext+0avgdata 4984maxresident)k
+0inputs+0outputs (0major+491minor)pagefaults 0swaps
+Timer - Multiplication: 79 ms 
+Ret: 0
+0.06user 0.00system 0:00.08elapsed 67%CPU (0avgtext+0avgdata 4928maxresident)k
+0inputs+0outputs (0major+490minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 1271 ms 
+Ret: 0
+0.77user 0.02system 0:01.30elapsed 61%CPU (0avgtext+0avgdata 9596maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 1583 ms 
+Ret: 0
+0.84user 0.03system 0:01.64elapsed 53%CPU (0avgtext+0avgdata 9628maxresident)k
+0inputs+0outputs (0major+1678minor)pagefaults 0swaps
+Timer - Multiplication: 2319 ms 
+Ret: 0
+1.09user 0.04system 0:02.39elapsed 47%CPU (0avgtext+0avgdata 9804maxresident)k
+0inputs+0outputs (0major+1682minor)pagefaults 0swaps
+Timer - Multiplication: 1644 ms 
+Ret: 0
+0.88user 0.02system 0:01.70elapsed 53%CPU (0avgtext+0avgdata 9728maxresident)k
+0inputs+0outputs (0major+1683minor)pagefaults 0swaps
+Timer - Multiplication: 1900 ms 
+Ret: 0
+1.38user 0.02system 0:01.94elapsed 72%CPU (0avgtext+0avgdata 9684maxresident)k
+0inputs+0outputs (0major+1680minor)pagefaults 0swaps
+Timer - Multiplication: 2281 ms 
+Ret: 0
+1.45user 0.02system 0:02.33elapsed 63%CPU (0avgtext+0avgdata 9736maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 1389 ms 
+Ret: 0
+1.12user 0.01system 0:01.42elapsed 80%CPU (0avgtext+0avgdata 9804maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 1648 ms 
+Ret: 0
+0.93user 0.02system 0:01.68elapsed 57%CPU (0avgtext+0avgdata 9504maxresident)k
+0inputs+0outputs (0major+1676minor)pagefaults 0swaps
+Timer - Multiplication: 1303 ms 
+Ret: 0
+0.77user 0.01system 0:01.35elapsed 57%CPU (0avgtext+0avgdata 9792maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+Timer - Multiplication: 1731 ms 
+Ret: 0
+1.04user 0.02system 0:01.80elapsed 59%CPU (0avgtext+0avgdata 9584maxresident)k
+0inputs+0outputs (0major+1681minor)pagefaults 0swaps
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 11861 ms 
+Ret: 0
+8.25user 0.15system 0:11.96elapsed 70%CPU (0avgtext+0avgdata 28080maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 11167 ms 
+Ret: 0
+7.70user 0.15system 0:11.32elapsed 69%CPU (0avgtext+0avgdata 28228maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 7122 ms 
+Ret: 0
+5.71user 0.11system 0:07.22elapsed 80%CPU (0avgtext+0avgdata 28088maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 12347 ms 
+Ret: 0
+10.54user 0.21system 0:12.53elapsed 85%CPU (0avgtext+0avgdata 28120maxresident)k
+0inputs+0outputs (0major+6301minor)pagefaults 0swaps
+Timer - Multiplication: 10079 ms 
+Ret: 0
+8.88user 0.17system 0:10.21elapsed 88%CPU (0avgtext+0avgdata 28284maxresident)k
+0inputs+8outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 13664 ms 
+Ret: 0
+10.21user 0.18system 0:13.75elapsed 75%CPU (0avgtext+0avgdata 28296maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 10641 ms 
+Ret: 0
+7.49user 0.10system 0:10.78elapsed 70%CPU (0avgtext+0avgdata 28164maxresident)k
+0inputs+8outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 9685 ms 
+Ret: 0
+6.70user 0.14system 0:09.85elapsed 69%CPU (0avgtext+0avgdata 28304maxresident)k
+0inputs+0outputs (0major+6306minor)pagefaults 0swaps
+Timer - Multiplication: 7207 ms 
+Ret: 0
+5.72user 0.08system 0:07.30elapsed 79%CPU (0avgtext+0avgdata 28080maxresident)k
+0inputs+0outputs (0major+6304minor)pagefaults 0swaps
+Timer - Multiplication: 10961 ms 
+Ret: 0
+7.15user 0.09system 0:11.08elapsed 65%CPU (0avgtext+0avgdata 28228maxresident)k
+0inputs+0outputs (0major+6307minor)pagefaults 0swaps

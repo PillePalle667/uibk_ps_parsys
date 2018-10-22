@@ -104,8 +104,8 @@
         <entry file="file://$PROJECT_DIR$/exercise02/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="84">
-                <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <first_editor relative-caret-position="219">
+                <caret line="29" column="16" lean-forward="true" selection-end-line="116" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -233,10 +233,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17262000" />
+    <option name="totallyTimeSpent" value="17469000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="146" y="36" width="1161" height="719" extended-state="1" />
+    <frame x="146" y="36" width="1161" height="719" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27892378" />
@@ -328,8 +328,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="84">
-            <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <first_editor relative-caret-position="219">
+            <caret line="29" column="16" lean-forward="true" selection-end-line="116" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>

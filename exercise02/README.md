@@ -18,12 +18,17 @@ So the time of searching for storage allocation is issue.
  
 
 
+<<<<<<< HEAD
 2. ### Using pref on benchmarking versions
+=======
+### Using pref on benchmarking versions
+>>>>>>> 40f6d788e3088a58d1e3987e9256ccaf6cba097c
 
 Benchmarking by using multitime for having min, max and mean value on three versions. 
 Then running  'pref ' on three benchmarking versions:
 
 `perf stat multitime ./test2.sh ...`
+<<<<<<< HEAD
   ### Result for Celeron Duel-Core CPU:
   
   
@@ -32,10 +37,21 @@ Then running  'pref ' on three benchmarking versions:
 ```
 1: ./test2.sh mmulNvector mmulNvector.txt mmul.cpp
             Mean        Std.Dev.    Min         Median      Max
+=======
+  ### Output for Celeron Duel-Core CPU:
+  
+  
+`=====> multitime Result`
+
+```
+
+  Mean        Std.Dev.    Min         Median      Max
+>>>>>>> 40f6d788e3088a58d1e3987e9256ccaf6cba097c
 real        0.001       0.000       0.001       0.001       0.001       
 user        0.001       0.000       0.001       0.001       0.001       
 sys         0.000       0.000       0.000       0.000       0.000       
 
+<<<<<<< HEAD
  Performance counter stats for :
 
               1.56 msec task-clock                #    0.671 CPUs utilized          
@@ -115,3 +131,38 @@ sys         0.000       0.000       0.000       0.000       0.000
 
 ```
  
+=======
+
+```
+
+|         | multitime | Preformance Counter | 
+
+|--------| ------------------|------------------|
+| <ul><li>[x] </li> | 
+```
+
+  Mean        Std.Dev.    Min         Median      Max
+real        0.001       0.000       0.001       0.001       0.001       
+user        0.001       0.000       0.001       0.001       0.001       
+sys         0.000       0.000       0.000       0.000       0.000       
+
+
+``` | 
+```
+   1.55 msec task-clock                #    0.733 CPUs utilized          
+                 1      context-switches          # 1000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               115      page-faults               # 115000.000 M/sec                
+         3,203,345      cycles                    # 3203345.000 GHz                 
+         1,344,140      instructions              #    0.42  insn per cycle         
+           263,586      branches                  # 263586000.000 M/sec             
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.002118546 seconds time elapsed
+
+       0.002173000 seconds user
+       0.000000000 seconds sys
+
+
+```
+>>>>>>> 40f6d788e3088a58d1e3987e9256ccaf6cba097c

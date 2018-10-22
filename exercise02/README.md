@@ -1,7 +1,7 @@
 # Parallel System
 PS Parallel System
 
-Authors: Bernhard, Karen, Zahra
+Authors: Bernhard, Karen Errou, Zahra jafari
 
 Team: A
 
@@ -17,41 +17,27 @@ memory. Searching for best and first fit allocation in terms of speed and storag
 So the time of searching for storage allocation is issue.
  
 
-
-<<<<<<< HEAD
 2. ### Using pref on benchmarking versions
-=======
-### Using pref on benchmarking versions
->>>>>>> 40f6d788e3088a58d1e3987e9256ccaf6cba097c
+
 
 Benchmarking by using multitime for having min, max and mean value on three versions. 
 Then running  'pref ' on three benchmarking versions:
 
 `perf stat multitime ./test2.sh ...`
-<<<<<<< HEAD
+
   ### Result for Celeron Duel-Core CPU:
   
   
-` NESTED_VECTOR`
-
-```
-1: ./test2.sh mmulNvector mmulNvector.txt mmul.cpp
-            Mean        Std.Dev.    Min         Median      Max
-=======
-  ### Output for Celeron Duel-Core CPU:
-  
+###NESTED_VECTOR
   
 `=====> multitime Result`
 
 ```
-
-  Mean        Std.Dev.    Min         Median      Max
->>>>>>> 40f6d788e3088a58d1e3987e9256ccaf6cba097c
+   Mean        Std.Dev.    Min         Median      Max
 real        0.001       0.000       0.001       0.001       0.001       
 user        0.001       0.000       0.001       0.001       0.001       
 sys         0.000       0.000       0.000       0.000       0.000       
 
-<<<<<<< HEAD
  Performance counter stats for :
 
               1.56 msec task-clock                #    0.671 CPUs utilized          
@@ -70,13 +56,14 @@ sys         0.000       0.000       0.000       0.000       0.000
 
 ```
 
- ` CONTIGUOUS_WITH_INDIRERCTION `
+ ###CONTIGUOUS_WITH_INDIRERCTION `
  
   ```
   ===> multitime results:
   
   1: ./test2.sh mmulInd mmulInd.txt mmul.cpp
-              Mean        Std.Dev.    Min         Median      Max
+  
+            Mean        Std.Dev.    Min         Median      Max
   real        0.001       0.000       0.001       0.001       0.001       
   user        0.000       0.000       0.000       0.000       0.000       
   sys         0.000       0.000       0.000       0.000       0.000       
@@ -97,72 +84,38 @@ sys         0.000       0.000       0.000       0.000       0.000
          0.002410000 seconds user
          0.000000000 seconds sys
   
-
+            
  ```
  
  
-  ` CONTIGUOUS_WITH_MULTIPLICATION `
+  ###CONTIGUOUS_WITH_MULTIPLICATION 
   
   ```
  ===> multitime results: 
  
- 1: ./test2.sh mmulMulti mmulMulti.txt mmul.cpp
-             Mean        Std.Dev.    Min         Median      Max
+    Mean        Std.Dev.    Min         Median      Max
  real        0.001       0.000       0.001       0.001       0.001       
- user        0.001       0.000       0.001       0.001       0.001       
+ user        0.000       0.000       0.000       0.000       0.000       
  sys         0.000       0.000       0.000       0.000       0.000       
  
   Performance counter stats for :
  
-               1.76 msec task-clock                #    0.044 CPUs utilized          
-                  6      context-switches          # 6000.000 M/sec                  
+               1.77 msec task-clock                #    0.638 CPUs utilized          
+                 16      context-switches          # 16000.000 M/sec                 
                   0      cpu-migrations            #    0.000 K/sec                  
                 115      page-faults               # 115000.000 M/sec                
-          3,629,586      cycles                    # 3629586.000 GHz                   (97.92%)
-          1,457,206      instructions              #    0.40  insn per cycle         
-            283,254      branches                  # 283254000.000 M/sec             
-             10,623      branch-misses             #    3.75% of all branches          (2.08%)
+          3,596,744      cycles                    # 3596744.000 GHz                 
+          1,419,402      instructions              #    0.39  insn per cycle         
+            279,360      branches                  # 279360000.000 M/sec             
+             14,524      branch-misses             #    5.20% of all branches        
  
-        0.040262231 seconds time elapsed
+        0.002774719 seconds time elapsed
  
-        0.000515000 seconds user
-        0.002039000 seconds sys
+        0.002501000 seconds user
+        0.000000000 seconds sys
+ 
  
 
+
 ```
  
-=======
-
-```
-
-|         | multitime | Preformance Counter | 
-
-|--------| ------------------|------------------|
-| <ul><li>[x] </li> | 
-```
-
-  Mean        Std.Dev.    Min         Median      Max
-real        0.001       0.000       0.001       0.001       0.001       
-user        0.001       0.000       0.001       0.001       0.001       
-sys         0.000       0.000       0.000       0.000       0.000       
-
-
-``` | 
-```
-   1.55 msec task-clock                #    0.733 CPUs utilized          
-                 1      context-switches          # 1000.000 M/sec                  
-                 0      cpu-migrations            #    0.000 K/sec                  
-               115      page-faults               # 115000.000 M/sec                
-         3,203,345      cycles                    # 3203345.000 GHz                 
-         1,344,140      instructions              #    0.42  insn per cycle         
-           263,586      branches                  # 263586000.000 M/sec             
-     <not counted>      branch-misses                                                 (0.00%)
-
-       0.002118546 seconds time elapsed
-
-       0.002173000 seconds user
-       0.000000000 seconds sys
-
-
-```
->>>>>>> 40f6d788e3088a58d1e3987e9256ccaf6cba097c

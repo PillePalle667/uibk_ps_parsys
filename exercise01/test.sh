@@ -1,3 +1,7 @@
+
+
+
+
 #!/bin/bash
 g++ $3 -o $1 -O0 -std=c++11 -Wall -fopenmp
 echo "BENCHMARKING OF "$1>>$2 

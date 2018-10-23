@@ -1,23 +1,21 @@
-# Parallel System
 PS Parallel System
 
-Authors: Bernhard, Karen Errou, Zahra jafari
-
+Authors: Bernhard, Karen Errou, Zahra Jafari
+Exercise02.
 Team: A
 
 ### Part 1
 
-1. Nested vector is pretty good, if data is only ever added at the end if top level, otherwise is inefficiencies during construction
-and run-time memory footprint and should be avoided if possible.
-Contiguous is allocation method which each file occupies a set of consecutive addresses on disk.
-Contiguous with indirection use to address disk space to large files and allow the greatest flexibility for file sizes and
-the fastest retrieval time.
-Contiguous with multiplication : Regarding to allocation partition, there are holes which are scattered throughout 
-memory. Searching for best and first fit allocation in terms of speed and storage utilization are iterated for each allocation.
-So the time of searching for storage allocation is issue.
- 
+** Nested Vector: Nested vector have some disadvantages: 
+                               -- The allocation needed is the number of rows times instead of 1.
+                               -- Access an element takes longer.  
+                  This is why having a 1D vector is better.
+** Contiguous multiplicaton: It offers a 1 dimension Matrix multiplication which is faster than 2D (Nested Vector) since it consumes less memory and allocation and deallocation overhead.
 
-2. ### Using pref on benchmarking versions
+** Contiguous with indirection: TODO 
+
+
+### Using pref on benchmarking versions
 
 
 Benchmarking by using multitime for having min, max and mean value on three versions. 
@@ -25,10 +23,10 @@ Then running  'pref ' on three benchmarking versions:
 
 `perf stat multitime ./test2.sh ...`
 
-  ### Result for Celeron Duel-Core CPU:
+
+### Result for Celeron Duel-Core CPU:
   
-  
-###NESTED_VECTOR
+NESTED_VECTOR
   
 `=====> multitime Result`
 
@@ -56,7 +54,7 @@ sys         0.000       0.000       0.000       0.000       0.000
 
 ```
 
- ###CONTIGUOUS_WITH_INDIRERCTION `
+ CONTIGUOUS_WITH_INDIRERCTION `
  
   ```
   ===> multitime results:
@@ -88,7 +86,7 @@ sys         0.000       0.000       0.000       0.000       0.000
  ```
  
  
-  ###CONTIGUOUS_WITH_MULTIPLICATION 
+ #CONTIGUOUS_WITH_MULTIPLICATION 
   
   ```
  ===> multitime results: 
@@ -116,6 +114,4 @@ sys         0.000       0.000       0.000       0.000       0.000
  
  
 
-
-```
  

@@ -7,11 +7,10 @@ Team: A
 ### Part 1
 
 ** Nested Vector: Nested vector have some disadvantages: 
-                               -- The allocation needed is the number of rows times instead of 1.
-                               -- Access an element takes longer.  
-                  This is why having a 1D vector is better.
+-- The allocation needed is the number of rows times instead of 1.
+-- Access an element takes longer.  
+This is why having a 1D vector is better.
 ** Contiguous multiplicaton: It offers a 1 dimension Matrix multiplication which is faster than 2D (Nested Vector) since it consumes less memory and allocation and deallocation overhead.
-
 ** Contiguous with indirection: TODO 
 
 
@@ -86,7 +85,7 @@ sys         0.000       0.000       0.000       0.000       0.000
  ```
  
  
- #CONTIGUOUS_WITH_MULTIPLICATION 
+ CONTIGUOUS_WITH_MULTIPLICATION 
   
   ```
  ===> multitime results: 

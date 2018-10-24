@@ -6,7 +6,7 @@ Team: A
 
 ### Part 1
 
-Nested Vector: Nested vector have some disadvantages: 
+Nested Vector: Nested vector have some disadvantages:    
 -- The allocation needed is the number of rows times instead of 1.  
 -- Access an element takes longer.    
 This is why having a 1D vector is better.  

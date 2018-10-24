@@ -1,0 +1,526 @@
+BENCHMARKING OF mmul_opt.cpp
+=======================================
+PROBLEM SIZE : 64
+========
+Nested Vector
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.006       0.000       0.005       0.006       0.006       
+user        0.003       0.002       0.000       0.003       0.006       
+sys         0.002       0.002       0.000       0.003       0.006       
+perf: 'stat./mmulNV' is not a perf-command. See 'perf --help'.
+========
+Multiplication
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.006       0.001       0.003       0.006       0.006       
+user        0.002       0.002       0.000       0.003       0.006       
+sys         0.003       0.002       0.000       0.003       0.006       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 64':
+
+          5,358752      task-clock (msec)         #    0,855 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               145      page-faults               #    0,027 M/sec                  
+         5.302.502      cycles                    #    0,990 GHz                      (37,91%)
+                 0      stalled-cycles-frontend                                     
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle    
+         4.800.082      instructions              #    0,91  insn per cycle                                            
+           840.747      branches                  #  156,892 M/sec                    (62,09%)
+     <not counted>      branch-misses                                                 (0,00%)
+
+       0,006266418 seconds time elapsed
+
+========
+Indirection
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.006       0.001       0.005       0.006       0.006       
+user        0.005       0.001       0.003       0.005       0.006       
+sys         0.001       0.001       0.000       0.000       0.003       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 64':
+
+          2,519746      task-clock (msec)         #    0,830 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               146      page-faults               #    0,058 M/sec                  
+         6.229.722      cycles                    #    2,472 GHz                    
+                 0      stalled-cycles-frontend                                     
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle    
+         4.608.916      instructions              #    0,74  insn per cycle                                            
+     <not counted>      branches                                                      (0,00%)
+     <not counted>      branch-misses                                                 (0,00%)
+
+       0,003036959 seconds time elapsed
+
+=======================================
+PROBLEM SIZE : 128
+========
+Nested Vector
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 4 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.011       0.002       0.005       0.012       0.012       
+user        0.008       0.004       0.000       0.008       0.012       
+sys         0.002       0.002       0.000       0.003       0.005       
+perf: 'stat./mmulNV' is not a perf-command. See 'perf --help'.
+========
+Multiplication
+Timer - Multiplication: 4 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.011       0.001       0.009       0.011       0.012       
+user        0.007       0.003       0.003       0.006       0.011       
+sys         0.004       0.003       0.000       0.004       0.007       
+Timer - Multiplication: 3 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 128':
+
+          7,599785      task-clock (msec)         #    0,884 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               220      page-faults               #    0,029 M/sec                  
+         7.890.427      cycles                    #    1,038 GHz                      (50,33%)
+                 0      stalled-cycles-frontend                                     
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle    
+        14.778.592      instructions              #    1,87  insn per cycle                                            
+         2.669.179      branches                  #  351,218 M/sec                    (49,67%)
+     <not counted>      branch-misses                                                 (0,00%)
+
+       0,008595194 seconds time elapsed
+
+========
+Indirection
+Timer - Multiplication: 3 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.011       0.002       0.006       0.012       0.013       
+user        0.007       0.004       0.003       0.007       0.012       
+sys         0.003       0.003       0.000       0.003       0.008       
+Timer - Multiplication: 5 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 128':
+
+          9,548065      task-clock (msec)         #    0,914 CPUs utilized          
+                 1      context-switches          #    0,105 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               221      page-faults               #    0,023 M/sec                  
+         9.452.471      cycles                    #    0,990 GHz                      (22,02%)
+                 0      stalled-cycles-frontend                                       (63,29%)
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle    
+        13.513.223      instructions              #    1,43  insn per cycle                                            
+         1.949.694      branches                  #  204,198 M/sec                    (77,98%)
+            33.538      branch-misses             #    1,72% of all branches          (36,71%)
+
+       0,010448636 seconds time elapsed
+
+=======================================
+PROBLEM SIZE : 246
+========
+Nested Vector
+Timer - Multiplication: 20 ms 
+Ret: 0
+Timer - Multiplication: 20 ms 
+Ret: 0
+Timer - Multiplication: 19 ms 
+Ret: 0
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 19 ms 
+Ret: 0
+Timer - Multiplication: 22 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.027       0.001       0.026       0.027       0.029       
+user        0.024       0.003       0.020       0.022       0.028       
+sys         0.003       0.003       0.000       0.004       0.008       
+perf: 'stat./mmulNV' is not a perf-command. See 'perf --help'.
+========
+Multiplication
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 20 ms 
+Ret: 0
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 23 ms 
+Ret: 0
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 19 ms 
+Ret: 0
+Timer - Multiplication: 22 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.028       0.002       0.025       0.028       0.031       
+user        0.026       0.002       0.023       0.026       0.029       
+sys         0.002       0.003       0.000       0.000       0.008       
+Timer - Multiplication: 22 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 246':
+
+         28,826455      task-clock (msec)         #    0,971 CPUs utilized          
+                 2      context-switches          #    0,069 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               478      page-faults               #    0,017 M/sec                  
+        56.890.259      cycles                    #    1,974 GHz                      (62,96%)
+                 0      stalled-cycles-frontend                                       (72,56%)
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle      (72,44%)
+        73.667.314      instructions              #    1,29  insn per cycle                                              (72,27%)
+         8.281.946      branches                  #  287,304 M/sec                    (64,60%)
+            72.562      branch-misses             #    0,88% of all branches          (55,17%)
+
+       0,029676004 seconds time elapsed
+
+========
+Indirection
+Timer - Multiplication: 20 ms 
+Ret: 0
+Timer - Multiplication: 20 ms 
+Ret: 0
+Timer - Multiplication: 22 ms 
+Ret: 0
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 19 ms 
+Ret: 0
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 21 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.027       0.002       0.024       0.027       0.029       
+user        0.023       0.002       0.020       0.023       0.027       
+sys         0.003       0.003       0.000       0.004       0.008       
+Timer - Multiplication: 22 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 246':
+
+         28,386010      task-clock (msec)         #    0,968 CPUs utilized          
+                 3      context-switches          #    0,106 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               480      page-faults               #    0,017 M/sec                  
+        54.321.736      cycles                    #    1,914 GHz                      (63,80%)
+                 0      stalled-cycles-frontend                                       (72,14%)
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle      (71,84%)
+        66.204.087      instructions              #    1,22  insn per cycle                                              (71,91%)
+         7.469.648      branches                  #  263,145 M/sec                    (64,36%)
+            73.195      branch-misses             #    0,98% of all branches          (55,96%)
+
+       0,029324087 seconds time elapsed
+
+=======================================
+PROBLEM SIZE : 512
+========
+Nested Vector
+Timer - Multiplication: 156 ms 
+Ret: 0
+Timer - Multiplication: 160 ms 
+Ret: 0
+Timer - Multiplication: 152 ms 
+Ret: 0
+Timer - Multiplication: 155 ms 
+Ret: 0
+Timer - Multiplication: 162 ms 
+Ret: 0
+Timer - Multiplication: 156 ms 
+Ret: 0
+Timer - Multiplication: 152 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.169       0.003       0.164       0.169       0.175       
+user        0.158       0.007       0.149       0.162       0.166       
+sys         0.011       0.005       0.004       0.012       0.020       
+perf: 'stat./mmulNV' is not a perf-command. See 'perf --help'.
+========
+Multiplication
+Timer - Multiplication: 188 ms 
+Ret: 0
+Timer - Multiplication: 174 ms 
+Ret: 0
+Timer - Multiplication: 195 ms 
+Ret: 0
+Timer - Multiplication: 174 ms 
+Ret: 0
+Timer - Multiplication: 182 ms 
+Ret: 0
+Timer - Multiplication: 178 ms 
+Ret: 0
+Timer - Multiplication: 182 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.195       0.007       0.186       0.195       0.207       
+user        0.188       0.006       0.178       0.186       0.196       
+sys         0.006       0.004       0.000       0.004       0.012       
+Timer - Multiplication: 185 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 512':
+
+        198,804605      task-clock (msec)         #    0,994 CPUs utilized          
+                20      context-switches          #    0,101 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.660      page-faults               #    0,008 M/sec                  
+       467.466.835      cycles                    #    2,351 GHz                      (65,30%)
+                 0      stalled-cycles-frontend                                       (67,35%)
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle      (67,89%)
+       680.043.542      instructions              #    1,45  insn per cycle                                              (67,87%)
+        71.087.040      branches                  #  357,572 M/sec                    (66,81%)
+           294.938      branch-misses             #    0,41% of all branches          (64,77%)
+
+       0,199970480 seconds time elapsed
+
+========
+Indirection
+Timer - Multiplication: 180 ms 
+Ret: 0
+Timer - Multiplication: 173 ms 
+Ret: 0
+Timer - Multiplication: 182 ms 
+Ret: 0
+Timer - Multiplication: 192 ms 
+Ret: 0
+Timer - Multiplication: 177 ms 
+Ret: 0
+Timer - Multiplication: 174 ms 
+Ret: 0
+Timer - Multiplication: 186 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.193       0.006       0.186       0.189       0.205       
+user        0.186       0.006       0.175       0.185       0.196       
+sys         0.007       0.004       0.000       0.008       0.012       
+Timer - Multiplication: 195 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 512':
+
+        206,665779      task-clock (msec)         #    0,994 CPUs utilized          
+                19      context-switches          #    0,092 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.663      page-faults               #    0,008 M/sec                  
+       482.399.250      cycles                    #    2,334 GHz                      (65,21%)
+                 0      stalled-cycles-frontend                                       (65,24%)
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle      (66,75%)
+       610.695.169      instructions              #    1,27  insn per cycle                                              (68,74%)
+        69.856.566      branches                  #  338,017 M/sec                    (68,03%)
+           302.540      branch-misses             #    0,43% of all branches          (66,02%)
+
+       0,207871374 seconds time elapsed
+
+=======================================
+PROBLEM SIZE : 1024
+========
+Nested Vector
+Timer - Multiplication: 1583 ms 
+Ret: 0
+Timer - Multiplication: 1578 ms 
+Ret: 0
+Timer - Multiplication: 1577 ms 
+Ret: 0
+Timer - Multiplication: 1573 ms 
+Ret: 0
+Timer - Multiplication: 1581 ms 
+Ret: 0
+Timer - Multiplication: 1591 ms 
+Ret: 0
+Timer - Multiplication: 1582 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        1.613       0.005       1.605       1.613       1.623       
+user        1.588       0.009       1.578       1.585       1.607       
+sys         0.021       0.004       0.012       0.020       0.028       
+perf: 'stat./mmulNV' is not a perf-command. See 'perf --help'.
+========
+Multiplication
+Timer - Multiplication: 1592 ms 
+Ret: 0
+Timer - Multiplication: 1587 ms 
+Ret: 0
+Timer - Multiplication: 1595 ms 
+Ret: 0
+Timer - Multiplication: 1587 ms 
+Ret: 0
+Timer - Multiplication: 1586 ms 
+Ret: 0
+Timer - Multiplication: 1587 ms 
+Ret: 0
+Timer - Multiplication: 1585 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        1.619       0.003       1.615       1.619       1.625       
+user        1.591       0.006       1.581       1.591       1.598       
+sys         0.023       0.004       0.016       0.024       0.032       
+Timer - Multiplication: 1587 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 1024':
+
+       1616,035510      task-clock (msec)         #    0,998 CPUs utilized          
+               154      context-switches          #    0,095 K/sec                  
+                 1      cpu-migrations            #    0,001 K/sec                  
+             6.268      page-faults               #    0,004 M/sec                  
+     3.889.223.648      cycles                    #    2,407 GHz                      (66,39%)
+                 0      stalled-cycles-frontend                                       (66,60%)
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle      (66,85%)
+     5.424.029.861      instructions              #    1,39  insn per cycle                                              (66,89%)
+       551.085.353      branches                  #  341,011 M/sec                    (66,76%)
+         1.268.389      branch-misses             #    0,23% of all branches          (66,52%)
+
+       1,619665728 seconds time elapsed
+
+========
+Indirection
+Timer - Multiplication: 1524 ms 
+Ret: 0
+Timer - Multiplication: 1509 ms 
+Ret: 0
+Timer - Multiplication: 1508 ms 
+Ret: 0
+Timer - Multiplication: 1519 ms 
+Ret: 0
+Timer - Multiplication: 1585 ms 
+Ret: 0
+Timer - Multiplication: 1508 ms 
+Ret: 0
+Timer - Multiplication: 1506 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        1.553       0.026       1.535       1.540       1.617       
+user        1.528       0.025       1.508       1.517       1.585       
+sys         0.022       0.004       0.016       0.020       0.028       
+Timer - Multiplication: 1533 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 1024':
+
+       1560,328908      task-clock (msec)         #    0,998 CPUs utilized          
+               148      context-switches          #    0,095 K/sec                  
+                 1      cpu-migrations            #    0,001 K/sec                  
+             6.274      page-faults               #    0,004 M/sec                  
+     3.739.380.064      cycles                    #    2,397 GHz                      (66,67%)
+                 0      stalled-cycles-frontend                                       (66,74%)
+                 0      stalled-cycles-backend    #    0,00% backend cycles idle      (66,73%)
+     4.873.588.625      instructions              #    1,30  insn per cycle                                              (66,72%)
+       544.018.312      branches                  #  348,656 M/sec                    (66,60%)
+         1.265.271      branch-misses             #    0,23% of all branches          (66,53%)
+
+       1,563969080 seconds time elapsed
+

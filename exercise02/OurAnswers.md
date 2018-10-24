@@ -13,15 +13,15 @@ This is why having a 1D vector is better.
   
 Contiguous multiplicaton: It offers a 1 dimension Matrix multiplication which is faster than 2D (Nested Vector) since it consumes less memory and allocation and deallocation overhead.  
   
-Contiguous with indirection: Contiguous with indirection is 2 1D vectors the first pointing to the main 1D.  
+Contiguous with indirection: Contiguous with indirection is two 1D vectors the first pointing to the main 1D.  
   
 In terms of performance we would expect that the nested vector will take the more memory than Contigous multiplication wth or without indirection.  
 The Contigous multiplication will take less memory but is the slowest in term of performance.  
 And finally, the contiguous multiplication with indirection is the fastest.   
 
-### Benchmarking  
+We used `perf stat .. `   to measure CPU counters
 
-`perf stat ./benchmark.sh `  
+### Benchmarking  
 
 Our benchmark gives the mean, min, max .. of real, user and system time for 7 execution for each size.  
 Sizes used are: 64, 128, 246, 512, 1024.  

@@ -17,31 +17,31 @@ Contiguous with indirection: Contiguous with indirection is 2 1D vectors the fir
 
 In terms of performance we would expect that the nested vector will take the more memory than Contigous multiplication wth or without indirection.
 The Contigous multiplication will take less memory but is the slowest in term of performance.
-And finally, the contiguous multiplication with indirection is the fastest.
+And finally, the contiguous multiplication with indirection is the fastest. 
 
-### Benchmarking
+### Benchmarking  
 
-`perf stat ./benchmark.sh `
+`perf stat ./benchmark.sh `  
 
-Our benchmark gives the mean, min, max .. of real, user and system time for 7 execution for each size.
-Sizes used are: 64, 128, 246, 512, 1024.
-It executes for each size the 3 versions of cpp.
-The benchmark gives also the perf stat of each version.
+Our benchmark gives the mean, min, max .. of real, user and system time for 7 execution for each size.  
+Sizes used are: 64, 128, 246, 512, 1024.  
+It executes for each size the 3 versions of cpp.  
+The benchmark gives also the perf stat of each version.  
 
-We benchmarked on 3 machines:   
-1. Celeron_DualCoreCPU
-2. i7-6500U_CPU_2.50GHz
-3. AMD_A8-7410_APU
+We benchmarked on 3 machines:    
+1. Celeron_DualCoreCPU  
+2. i7-6500U_CPU_2.50GHz  
+3. AMD_A8-7410_APU  
 
-Our benchmark is the file in each machine-name folder: benchmark.sh
-Our benchmark output, file in each machine-name folder: mmul.txt
+Our benchmark is the file in each machine-name folder: benchmark.sh.  
+Our benchmark output, file in each machine-name folder: mmul.txt.  
 Execute as follows: ` ./benchmark.sh mmul.txt mmul.cpp `  (Where mmul.txt is the result text and mmul.cpp is the cpp file)
 
 ### Part 2
 
-Our Optimized version is the file in each machine-name folder: mmulOpt.cpp
-Our Benchmarked Output, is the file in each machine-name folder: mmulOpt.txt
+Our Optimized version is the file in each machine-name folder: mmulOpt.cpp.  
+Our Benchmarked Output, is the file in each machine-name folder: mmulOpt.txt.  
 
-Our Parallelized version is the file in each machine-name folder: mmulOpenMP.cpp
-Our Benchmarked Output, is the file in each machine-name folder: mmulOpenMP.txt
+Our Parallelized version is the file in each machine-name folder: mmulOpenMP.cpp. </br> 
+Our Benchmarked Output, is the file in each machine-name folder: mmulOpenMP.txt.  
 

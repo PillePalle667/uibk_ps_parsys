@@ -1,3 +1,0 @@
-/home/sima/Desktop/uibk_ps_parsys/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sima/Desktop/uibk_ps_parsys/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sima/Desktop/uibk_ps_parsys/cmake-build-debug/CMakeFiles/uibk_ps_parsys.dir

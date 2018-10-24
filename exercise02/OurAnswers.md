@@ -33,7 +33,7 @@ We benchmarked on 3 machines:
 2. i7-6500U_CPU_2.50GHz  
 3. AMD_A8-7410_APU  
 
-Our benchmark is the file in each machine-name folder: benchmark.sh.  
+Our benchmark is the file: benchmark.sh.  
 Our benchmark output, file in each machine-name folder: mmul.txt.  
 Execute as follows: ` ./benchmark.sh mmul.txt mmul.cpp `  (Where mmul.txt is the result text and mmul.cpp is the cpp file)
 

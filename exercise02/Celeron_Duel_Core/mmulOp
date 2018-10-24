@@ -1,0 +1,669 @@
+BENCHMARKING OF mmulOpt.cpp
+=======================================
+PROBLEM SIZE : 64
+========
+Nested Vector
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.004       0.000       0.003       0.004       0.004       
+user        0.001       0.001       0.000       0.000       0.003       
+sys         0.002       0.001       0.000       0.003       0.003       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 64':
+
+              3.01 msec task-clock                #    0.807 CPUs utilized          
+                 5      context-switches          # 1666.667 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               144      page-faults               # 48000.000 M/sec                 
+     <not counted>      cycles                                                        (0.00%)
+     <not counted>      instructions                                                  (0.00%)
+     <not counted>      branches                                                      (0.00%)
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.003735324 seconds time elapsed
+
+       0.003477000 seconds user
+       0.000000000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+========
+Multiplication
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.004       0.000       0.003       0.004       0.004       
+user        0.002       0.002       0.000       0.003       0.004       
+sys         0.001       0.002       0.000       0.000       0.003       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 64':
+
+              3.03 msec task-clock                #    0.833 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               145      page-faults               # 48333.333 M/sec                 
+     <not counted>      cycles                                                        (0.00%)
+     <not counted>      instructions                                                  (0.00%)
+     <not counted>      branches                                                      (0.00%)
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.003641047 seconds time elapsed
+
+       0.000000000 seconds user
+       0.003531000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+========
+Indirection
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.004       0.000       0.003       0.004       0.004       
+user        0.003       0.001       0.000       0.003       0.003       
+sys         0.000       0.001       0.000       0.000       0.003       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 64':
+
+              2.81 msec task-clock                #    0.851 CPUs utilized          
+                 1      context-switches          #  500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               141      page-faults               # 70500.000 M/sec                 
+     <not counted>      cycles                                                        (0.00%)
+     <not counted>      instructions                                                  (0.00%)
+     <not counted>      branches                                                      (0.00%)
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.003303944 seconds time elapsed
+
+       0.003286000 seconds user
+       0.000000000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+=======================================
+PROBLEM SIZE : 128
+========
+Nested Vector
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 3 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.010       0.008       0.006       0.007       0.029       
+user        0.005       0.001       0.003       0.006       0.006       
+sys         0.000       0.001       0.000       0.000       0.003       
+Timer - Multiplication: 2 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 128':
+
+              5.73 msec task-clock                #    0.680 CPUs utilized          
+                 4      context-switches          #  800.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               218      page-faults               # 43600.000 M/sec                 
+     <not counted>      cycles                                                        (0.00%)
+     <not counted>      instructions                                                  (0.00%)
+     <not counted>      branches                                                      (0.00%)
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.008433447 seconds time elapsed
+
+       0.006318000 seconds user
+       0.000000000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+========
+Multiplication
+Timer - Multiplication: 4 ms 
+Ret: 0
+Timer - Multiplication: 3 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 3 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 3 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.011       0.009       0.006       0.007       0.033       
+user        0.005       0.002       0.000       0.006       0.006       
+sys         0.002       0.002       0.000       0.000       0.006       
+Timer - Multiplication: 2 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 128':
+
+              5.74 msec task-clock                #    0.908 CPUs utilized          
+                 1      context-switches          #  200.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               222      page-faults               # 44400.000 M/sec                 
+     <not counted>      cycles                                                        (0.00%)
+     <not counted>      instructions                                                  (0.00%)
+     <not counted>      branches                                                      (0.00%)
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.006321633 seconds time elapsed
+
+       0.003131000 seconds user
+       0.003131000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+========
+Indirection
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+Timer - Multiplication: 2 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.006       0.000       0.006       0.006       0.006       
+user        0.004       0.002       0.000       0.005       0.006       
+sys         0.002       0.002       0.000       0.000       0.006       
+Timer - Multiplication: 2 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 128':
+
+              5.20 msec task-clock                #    0.920 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               220      page-faults               # 44000.000 M/sec                 
+     <not counted>      cycles                                                        (0.00%)
+     <not counted>      instructions                                                  (0.00%)
+     <not counted>      branches                                                      (0.00%)
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.005651474 seconds time elapsed
+
+       0.002848000 seconds user
+       0.002848000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+=======================================
+PROBLEM SIZE : 246
+========
+Nested Vector
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 17 ms 
+Ret: 0
+Timer - Multiplication: 16 ms 
+Ret: 0
+Timer - Multiplication: 23 ms 
+Ret: 0
+Timer - Multiplication: 17 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 14 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.023       0.004       0.020       0.021       0.031       
+user        0.017       0.002       0.015       0.016       0.022       
+sys         0.003       0.001       0.000       0.004       0.004       
+Timer - Multiplication: 17 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 246':
+
+             21.15 msec task-clock                #    0.946 CPUs utilized          
+                 5      context-switches          #  238.095 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               483      page-faults               # 23000.000 M/sec                 
+        44,066,570      cycles                    # 2098408.095 GHz                   (36.02%)
+        87,354,963      instructions              #    1.98  insn per cycle           (54.27%)
+         9,348,424      branches                  # 445163047.619 M/sec               (39.97%)
+            77,326      branch-misses             #    0.83% of all branches          (22.77%)
+
+       0.022346189 seconds time elapsed
+
+       0.021662000 seconds user
+       0.000000000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 20 ms 
+Ret: 0
+Timer - Multiplication: 19 ms 
+Ret: 0
+Timer - Multiplication: 24 ms 
+Ret: 0
+Timer - Multiplication: 19 ms 
+Ret: 0
+Timer - Multiplication: 18 ms 
+Ret: 0
+Timer - Multiplication: 18 ms 
+Ret: 0
+Timer - Multiplication: 22 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.026       0.003       0.023       0.025       0.031       
+user        0.022       0.002       0.019       0.023       0.024       
+sys         0.003       0.002       0.000       0.004       0.006       
+Timer - Multiplication: 20 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 246':
+
+             25.41 msec task-clock                #    0.969 CPUs utilized          
+                 5      context-switches          #  200.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               475      page-faults               # 19000.000 M/sec                 
+        52,956,608      cycles                    # 2118264.320 GHz                   (46.89%)
+       101,105,346      instructions              #    1.91  insn per cycle           (47.02%)
+        10,044,020      branches                  # 401760800.000 M/sec               (47.05%)
+            78,056      branch-misses             #    0.78% of all branches          (33.83%)
+
+       0.026209347 seconds time elapsed
+
+       0.025995000 seconds user
+       0.000000000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 21 ms 
+Ret: 0
+Timer - Multiplication: 16 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 16 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.026       0.010       0.020       0.021       0.051       
+user        0.018       0.003       0.015       0.016       0.025       
+sys         0.003       0.002       0.000       0.004       0.005       
+Timer - Multiplication: 17 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 246':
+
+             20.02 msec task-clock                #    0.892 CPUs utilized          
+                 9      context-switches          #  450.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               481      page-faults               # 24050.000 M/sec                 
+        41,907,515      cycles                    # 2095375.750 GHz                   (58.35%)
+        82,921,909      instructions              #    1.98  insn per cycle           (38.46%)
+         9,027,497      branches                  # 451374850.000 M/sec               (19.24%)
+     <not counted>      branch-misses                                                 (0.00%)
+
+       0.022452228 seconds time elapsed
+
+       0.015405000 seconds user
+       0.005135000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+=======================================
+PROBLEM SIZE : 512
+========
+Nested Vector
+Timer - Multiplication: 316 ms 
+Ret: 0
+Timer - Multiplication: 324 ms 
+Ret: 0
+Timer - Multiplication: 311 ms 
+Ret: 0
+Timer - Multiplication: 326 ms 
+Ret: 0
+Timer - Multiplication: 324 ms 
+Ret: 0
+Timer - Multiplication: 334 ms 
+Ret: 0
+Timer - Multiplication: 330 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.337       0.007       0.325       0.338       0.348       
+user        0.324       0.006       0.314       0.326       0.331       
+sys         0.006       0.004       0.000       0.008       0.012       
+Timer - Multiplication: 315 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 512':
+
+            320.72 msec task-clock                #    0.978 CPUs utilized          
+                91      context-switches          #  284.375 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             1,673      page-faults               # 5228.125 M/sec                  
+       668,679,824      cycles                    # 2089624.450 GHz                   (37.68%)
+       627,927,900      instructions              #    0.94  insn per cycle           (36.75%)
+        70,458,885      branches                  # 220184015.625 M/sec               (36.63%)
+           291,087      branch-misses             #    0.41% of all branches          (36.86%)
+
+       0.327962232 seconds time elapsed
+
+       0.313373000 seconds user
+       0.007834000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 363 ms 
+Ret: 0
+Timer - Multiplication: 386 ms 
+Ret: 0
+Timer - Multiplication: 449 ms 
+Ret: 0
+Timer - Multiplication: 344 ms 
+Ret: 0
+Timer - Multiplication: 360 ms 
+Ret: 0
+Timer - Multiplication: 525 ms 
+Ret: 0
+Timer - Multiplication: 499 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.432       0.068       0.357       0.398       0.539       
+user        0.377       0.027       0.342       0.374       0.419       
+sys         0.014       0.007       0.008       0.012       0.029       
+Timer - Multiplication: 470 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 512':
+
+            424.21 msec task-clock                #    0.864 CPUs utilized          
+               152      context-switches          #  358.491 M/sec                  
+                 1      cpu-migrations            #    2.358 M/sec                  
+             1,660      page-faults               # 3915.094 M/sec                  
+       882,911,408      cycles                    # 2082338.226 GHz                   (38.67%)
+       695,405,271      instructions              #    0.79  insn per cycle           (39.63%)
+        71,652,094      branches                  # 168990787.736 M/sec               (37.70%)
+           326,232      branch-misses             #    0.46% of all branches          (36.24%)
+
+       0.490889297 seconds time elapsed
+
+       0.420928000 seconds user
+       0.003861000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 351 ms 
+Ret: 0
+Timer - Multiplication: 357 ms 
+Ret: 0
+Timer - Multiplication: 343 ms 
+Ret: 0
+Timer - Multiplication: 390 ms 
+Ret: 0
+Timer - Multiplication: 379 ms 
+Ret: 0
+Timer - Multiplication: 322 ms 
+Ret: 0
+Timer - Multiplication: 397 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.377       0.025       0.335       0.372       0.411       
+user        0.348       0.023       0.299       0.353       0.375       
+sys         0.012       0.007       0.000       0.012       0.020       
+Timer - Multiplication: 428 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 512':
+
+            372.30 msec task-clock                #    0.819 CPUs utilized          
+                67      context-switches          #  180.108 M/sec                  
+                 1      cpu-migrations            #    2.688 M/sec                  
+             1,665      page-faults               # 4475.806 M/sec                  
+       775,742,995      cycles                    # 2085330.632 GHz                   (39.11%)
+       630,889,989      instructions              #    0.81  insn per cycle           (38.48%)
+        72,370,125      branches                  # 194543346.774 M/sec               (37.31%)
+           301,232      branch-misses             #    0.42% of all branches          (36.66%)
+
+       0.454799900 seconds time elapsed
+
+       0.353343000 seconds user
+       0.019630000 seconds sys
+
+
+=======================================
+PROBLEM SIZE : 1024
+========
+Nested Vector
+Timer - Multiplication: 2909 ms 
+Ret: 0
+Timer - Multiplication: 3138 ms 
+Ret: 0
+Timer - Multiplication: 3105 ms 
+Ret: 0
+Timer - Multiplication: 2833 ms 
+Ret: 0
+Timer - Multiplication: 2871 ms 
+Ret: 0
+Timer - Multiplication: 3200 ms 
+Ret: 0
+Timer - Multiplication: 3330 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        3.109       0.172       2.873       3.163       3.376       
+user        2.917       0.130       2.782       2.856       3.120       
+sys         0.047       0.014       0.024       0.048       0.067       
+Timer - Multiplication: 3043 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 1024':
+
+          3,037.54 msec task-clock                #    0.984 CPUs utilized          
+               232      context-switches          #   76.391 M/sec                  
+                 2      cpu-migrations            #    0.659 M/sec                  
+             6,294      page-faults               # 2072.440 M/sec                  
+     6,333,907,793      cycles                    # 2085580.439 GHz                   (37.50%)
+     4,900,985,984      instructions              #    0.77  insn per cycle           (37.55%)
+       547,325,732      branches                  # 180219207.112 M/sec               (37.33%)
+         1,169,088      branch-misses             #    0.21% of all branches          (37.32%)
+
+       3.088307942 seconds time elapsed
+
+       3.005684000 seconds user
+       0.031932000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 3193 ms 
+Ret: 0
+Timer - Multiplication: 3256 ms 
+Ret: 0
+Timer - Multiplication: 3045 ms 
+Ret: 0
+Timer - Multiplication: 3037 ms 
+Ret: 0
+Timer - Multiplication: 3027 ms 
+Ret: 0
+Timer - Multiplication: 2992 ms 
+Ret: 0
+Timer - Multiplication: 2836 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        3.094       0.128       2.873       3.077       3.296       
+user        2.979       0.108       2.815       2.946       3.188       
+sys         0.044       0.024       0.024       0.032       0.087       
+Timer - Multiplication: 2796 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 1024':
+
+          2,819.46 msec task-clock                #    0.994 CPUs utilized          
+               154      context-switches          #   54.629 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             6,270      page-faults               # 2224.193 M/sec                  
+     5,879,300,125      cycles                    # 2085597.774 GHz                   (37.55%)
+     5,461,744,336      instructions              #    0.93  insn per cycle           (37.39%)
+       550,777,341      branches                  # 195380397.659 M/sec               (37.39%)
+         1,126,404      branch-misses             #    0.20% of all branches          (37.36%)
+
+       2.835214325 seconds time elapsed
+
+       2.788170000 seconds user
+       0.031910000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 2758 ms 
+Ret: 0
+Timer - Multiplication: 2849 ms 
+Ret: 0
+Timer - Multiplication: 2809 ms 
+Ret: 0
+Timer - Multiplication: 2917 ms 
+Ret: 0
+Timer - Multiplication: 2831 ms 
+Ret: 0
+Timer - Multiplication: 2837 ms 
+Ret: 0
+Timer - Multiplication: 2818 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        2.871       0.044       2.797       2.870       2.956       
+user        2.821       0.027       2.765       2.822       2.850       
+sys         0.033       0.016       0.020       0.032       0.071       
+Timer - Multiplication: 2816 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 1024':
+
+          2,835.93 msec task-clock                #    0.992 CPUs utilized          
+               156      context-switches          #   55.026 M/sec                  
+                 1      cpu-migrations            #    0.353 M/sec                  
+             6,274      page-faults               # 2213.051 M/sec                  
+     5,914,914,811      cycles                    # 2086389.704 GHz                   (24.95%)
+     4,903,851,722      instructions              #    0.83  insn per cycle           (37.42%)
+       551,920,425      branches                  # 194680925.926 M/sec               (37.45%)
+         1,129,347      branch-misses             #    0.20% of all branches          (37.53%)
+
+       2.858238922 seconds time elapsed
+
+       2.808151000 seconds user
+       0.027961000 seconds sys
+
+

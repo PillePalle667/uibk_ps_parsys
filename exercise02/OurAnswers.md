@@ -29,19 +29,20 @@ It executes for each size the 3 versions of cpp.
 The benchmark gives also the perf stat of each version.  
 
 We benchmarked on 3 machines:    
-1. Celeron_DualCoreCPU  
+1.  AMD_A8-7410_APU 
 2. i7-6500U_CPU_2.50GHz  
-3. AMD_A8-7410_APU  
+3.  Celeron_DualCoreCPU
+ 
 
-Our benchmark is the file: benchmark.sh.  
+Our benchmark is the file in Code folder: benchmark.sh.  
 Our benchmark output, file in each machine-name folder: mmul.txt.  
 Execute as follows: ` ./benchmark.sh mmul.txt mmul.cpp `  (Where mmul.txt is the result text and mmul.cpp is the cpp file)
 
 ### Part 2
 
-Our Optimized version is the file in each machine-name folder: mmulOpt.cpp.  
+Our Optimized version in Code folder folder: mmulOpt.cpp.  
 Our Benchmarked Output, is the file in each machine-name folder: mmulOpt.txt.  
 
-Our Parallelized version is the file in each machine-name folder: mmulOpenMP.cpp.  
+Our Parallelized version iCode folder folder: mmulOpenMP.cpp.  
 Our Benchmarked Output, is the file in each machine-name folder: mmulOpenMP.txt.  
 

@@ -43,6 +43,6 @@ Execute as follows: ` ./benchmark.sh mmul.txt mmul.cpp `  (Where mmul.txt is the
 Our Optimized version in Code folder folder: mmulOpt.cpp.  
 Our Benchmarked Output, is the file in each machine-name folder: mmulOpt.txt.  
 
-Our Parallelized version iCode folder folder: mmulOpenMP.cpp.  
+Our Parallelized version in Code folder folder: mmulOpenMP.cpp.  
 Our Benchmarked Output, is the file in each machine-name folder: mmulOpenMP.txt.  
 

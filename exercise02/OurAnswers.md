@@ -7,17 +7,17 @@ Team: A
 ### Part 1
 
 Nested Vector: Nested vector have some disadvantages: 
--- The allocation needed is the number of rows times instead of 1.
--- Access an element takes longer.  
-This is why having a 1D vector is better.
-
-Contiguous multiplicaton: It offers a 1 dimension Matrix multiplication which is faster than 2D (Nested Vector) since it consumes less memory and allocation and deallocation overhead.
-
-Contiguous with indirection: Contiguous with indirection is 2 1D vectors the first pointing to the main 1D.
-
-In terms of performance we would expect that the nested vector will take the more memory than Contigous multiplication wth or without indirection.
-The Contigous multiplication will take less memory but is the slowest in term of performance.
-And finally, the contiguous multiplication with indirection is the fastest. 
+-- The allocation needed is the number of rows times instead of 1.  
+-- Access an element takes longer.    
+This is why having a 1D vector is better.  
+  
+Contiguous multiplicaton: It offers a 1 dimension Matrix multiplication which is faster than 2D (Nested Vector) since it consumes less memory and allocation and deallocation overhead.  
+  
+Contiguous with indirection: Contiguous with indirection is 2 1D vectors the first pointing to the main 1D.  
+  
+In terms of performance we would expect that the nested vector will take the more memory than Contigous multiplication wth or without indirection.  
+The Contigous multiplication will take less memory but is the slowest in term of performance.  
+And finally, the contiguous multiplication with indirection is the fastest.   
 
 ### Benchmarking  
 
@@ -42,6 +42,6 @@ Execute as follows: ` ./benchmark.sh mmul.txt mmul.cpp `  (Where mmul.txt is the
 Our Optimized version is the file in each machine-name folder: mmulOpt.cpp.  
 Our Benchmarked Output, is the file in each machine-name folder: mmulOpt.txt.  
 
-Our Parallelized version is the file in each machine-name folder: mmulOpenMP.cpp. </br> 
+Our Parallelized version is the file in each machine-name folder: mmulOpenMP.cpp.  
 Our Benchmarked Output, is the file in each machine-name folder: mmulOpenMP.txt.  
 

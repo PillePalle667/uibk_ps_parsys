@@ -1,0 +1,641 @@
+BENCHMARKING OF mmul2Opt.cpp
+=======================================
+PROBLEM SIZE : 64
+========
+Nested Vector
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.005       0.002       0.002       0.006       0.008       
+user        0.002       0.001       0.000       0.002       0.004       
+sys         0.003       0.002       0.000       0.003       0.006       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 64':
+
+          1.228350      task-clock:u (msec)       #    0.867 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               153      page-faults:u             #    0.125 M/sec                  
+         2,123,479      cycles:u                  #    1.729 GHz                    
+         3,869,369      instructions:u            #    1.82  insn per cycle         
+           589,474      branches:u                #  479.891 M/sec                  
+            16,150      branch-misses:u           #    2.74% of all branches        
+
+       0.001416921 seconds time elapsed
+
+       0.001451000 seconds user
+       0.000000000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.005       0.002       0.001       0.006       0.008       
+user        0.003       0.002       0.000       0.003       0.005       
+sys         0.002       0.001       0.001       0.002       0.004       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 64':
+
+          1.416678      task-clock:u (msec)       #    0.828 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               151      page-faults:u             #    0.107 M/sec                  
+         2,239,474      cycles:u                  #    1.581 GHz                    
+         3,949,797      instructions:u            #    1.76  insn per cycle         
+           582,352      branches:u                #  411.069 M/sec                  
+            15,706      branch-misses:u           #    2.70% of all branches        
+
+       0.001710559 seconds time elapsed
+
+       0.000839000 seconds user
+       0.000853000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 64
+            Mean        Std.Dev.    Min         Median      Max
+real        0.006       0.002       0.001       0.006       0.008       
+user        0.003       0.002       0.000       0.003       0.005       
+sys         0.003       0.001       0.001       0.003       0.004       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 64':
+
+          1.227738      task-clock:u (msec)       #    0.866 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               152      page-faults:u             #    0.124 M/sec                  
+         2,131,117      cycles:u                  #    1.736 GHz                    
+         3,765,528      instructions:u            #    1.77  insn per cycle         
+           569,273      branches:u                #  463.676 M/sec                  
+            16,591      branch-misses:u           #    2.91% of all branches        
+
+       0.001417843 seconds time elapsed
+
+       0.001441000 seconds user
+       0.000000000 seconds sys
+
+
+=======================================
+PROBLEM SIZE : 128
+========
+Nested Vector
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.007       0.002       0.002       0.007       0.008       
+user        0.004       0.002       0.000       0.005       0.006       
+sys         0.002       0.000       0.001       0.002       0.003       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 128':
+
+          2.321152      task-clock:u (msec)       #    0.891 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               227      page-faults:u             #    0.098 M/sec                  
+         4,754,623      cycles:u                  #    2.048 GHz                    
+        12,622,682      instructions:u            #    2.65  insn per cycle         
+         1,604,955      branches:u                #  691.448 M/sec                  
+            27,789      branch-misses:u           #    1.73% of all branches        
+
+       0.002606187 seconds time elapsed
+
+       0.000855000 seconds user
+       0.001723000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.008       0.004       0.002       0.007       0.014       
+user        0.005       0.003       0.002       0.003       0.010       
+sys         0.002       0.002       0.000       0.002       0.006       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 128':
+
+          2.279392      task-clock:u (msec)       #    0.892 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               224      page-faults:u             #    0.098 M/sec                  
+         4,778,656      cycles:u                  #    2.096 GHz                    
+        13,667,262      instructions:u            #    2.86  insn per cycle         
+         1,616,886      branches:u                #  709.350 M/sec                  
+            27,260      branch-misses:u           #    1.69% of all branches        
+
+       0.002554518 seconds time elapsed
+
+       0.002941000 seconds user
+       0.000000000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 0 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+Timer - Multiplication: 1 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 128
+            Mean        Std.Dev.    Min         Median      Max
+real        0.007       0.002       0.002       0.007       0.008       
+user        0.004       0.001       0.001       0.004       0.005       
+sys         0.002       0.001       0.001       0.002       0.004       
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 128':
+
+          2.093356      task-clock:u (msec)       #    0.917 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               227      page-faults:u             #    0.108 M/sec                  
+         4,394,296      cycles:u                  #    2.099 GHz                    
+        12,393,696      instructions:u            #    2.82  insn per cycle         
+         1,562,348      branches:u                #  746.337 M/sec                  
+            28,189      branch-misses:u           #    1.80% of all branches        
+
+       0.002283188 seconds time elapsed
+
+       0.001173000 seconds user
+       0.001145000 seconds sys
+
+
+=======================================
+PROBLEM SIZE : 246
+========
+Nested Vector
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 8 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 19 ms 
+Ret: 0
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 8 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.015       0.004       0.008       0.015       0.023       
+user        0.010       0.005       0.006       0.008       0.021       
+sys         0.004       0.002       0.001       0.003       0.006       
+Timer - Multiplication: 5 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 246':
+
+          7.325358      task-clock:u (msec)       #    0.972 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               487      page-faults:u             #    0.066 M/sec                  
+        19,214,513      cycles:u                  #    2.623 GHz                    
+        71,782,082      instructions:u            #    3.74  insn per cycle         
+         8,315,973      branches:u                # 1135.231 M/sec                  
+            70,709      branch-misses:u           #    0.85% of all branches        
+
+       0.007537630 seconds time elapsed
+
+       0.007535000 seconds user
+       0.000000000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 7 ms 
+Ret: 0
+Timer - Multiplication: 7 ms 
+Ret: 0
+Timer - Multiplication: 33 ms 
+Ret: 0
+Timer - Multiplication: 8 ms 
+Ret: 0
+Timer - Multiplication: 8 ms 
+Ret: 0
+Timer - Multiplication: 8 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.017       0.010       0.009       0.014       0.042       
+user        0.014       0.010       0.007       0.010       0.039       
+sys         0.003       0.001       0.001       0.003       0.005       
+Timer - Multiplication: 6 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 246':
+
+          8.079943      task-clock:u (msec)       #    0.978 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               485      page-faults:u             #    0.060 M/sec                  
+        21,494,208      cycles:u                  #    2.660 GHz                    
+        79,561,557      instructions:u            #    3.70  insn per cycle         
+         8,431,770      branches:u                # 1043.543 M/sec                  
+            68,256      branch-misses:u           #    0.81% of all branches        
+
+       0.008265578 seconds time elapsed
+
+       0.007267000 seconds user
+       0.001012000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 5 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+Timer - Multiplication: 7 ms 
+Ret: 0
+Timer - Multiplication: 7 ms 
+Ret: 0
+Timer - Multiplication: 7 ms 
+Ret: 0
+Timer - Multiplication: 6 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 246
+            Mean        Std.Dev.    Min         Median      Max
+real        0.015       0.008       0.008       0.013       0.035       
+user        0.009       0.001       0.008       0.008       0.010       
+sys         0.003       0.001       0.000       0.003       0.004       
+Timer - Multiplication: 5 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 246':
+
+          7.458967      task-clock:u (msec)       #    0.968 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               489      page-faults:u             #    0.066 M/sec                  
+        19,384,676      cycles:u                  #    2.599 GHz                    
+        71,273,631      instructions:u            #    3.68  insn per cycle         
+         8,228,469      branches:u                # 1103.165 M/sec                  
+            70,807      branch-misses:u           #    0.86% of all branches        
+
+       0.007707655 seconds time elapsed
+
+       0.005786000 seconds user
+       0.001924000 seconds sys
+
+
+=======================================
+PROBLEM SIZE : 512
+========
+Nested Vector
+Timer - Multiplication: 48 ms 
+Ret: 0
+Timer - Multiplication: 52 ms 
+Ret: 0
+Timer - Multiplication: 52 ms 
+Ret: 0
+Timer - Multiplication: 57 ms 
+Ret: 0
+Timer - Multiplication: 77 ms 
+Ret: 0
+Timer - Multiplication: 54 ms 
+Ret: 0
+Timer - Multiplication: 66 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.068       0.013       0.052       0.063       0.093       
+user        0.061       0.009       0.050       0.056       0.079       
+sys         0.007       0.004       0.002       0.005       0.014       
+Timer - Multiplication: 49 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 512':
+
+         52.820911      task-clock:u (msec)       #    0.994 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             1,678      page-faults:u             #    0.032 M/sec                  
+       152,424,319      cycles:u                  #    2.886 GHz                    
+       615,174,282      instructions:u            #    4.04  insn per cycle         
+        69,260,390      branches:u                # 1311.231 M/sec                  
+           270,263      branch-misses:u           #    0.39% of all branches        
+
+       0.053113307 seconds time elapsed
+
+       0.048984000 seconds user
+       0.003986000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 54 ms 
+Ret: 0
+Timer - Multiplication: 62 ms 
+Ret: 0
+Timer - Multiplication: 85 ms 
+Ret: 0
+Timer - Multiplication: 64 ms 
+Ret: 0
+Timer - Multiplication: 58 ms 
+Ret: 0
+Timer - Multiplication: 61 ms 
+Ret: 0
+Timer - Multiplication: 79 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.077       0.015       0.058       0.072       0.100       
+user        0.070       0.010       0.058       0.067       0.088       
+sys         0.006       0.004       0.000       0.005       0.012       
+Timer - Multiplication: 54 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 512':
+
+         58.047355      task-clock:u (msec)       #    0.995 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             1,668      page-faults:u             #    0.029 M/sec                  
+       168,826,666      cycles:u                  #    2.908 GHz                    
+       685,095,841      instructions:u            #    4.06  insn per cycle         
+        70,014,926      branches:u                # 1206.169 M/sec                  
+           264,517      branch-misses:u           #    0.38% of all branches        
+
+       0.058326447 seconds time elapsed
+
+       0.054212000 seconds user
+       0.003997000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 49 ms 
+Ret: 0
+Timer - Multiplication: 76 ms 
+Ret: 0
+Timer - Multiplication: 53 ms 
+Ret: 0
+Timer - Multiplication: 50 ms 
+Ret: 0
+Timer - Multiplication: 58 ms 
+Ret: 0
+Timer - Multiplication: 52 ms 
+Ret: 0
+Timer - Multiplication: 58 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 512
+            Mean        Std.Dev.    Min         Median      Max
+real        0.066       0.012       0.052       0.062       0.093       
+user        0.060       0.009       0.050       0.057       0.079       
+sys         0.005       0.003       0.002       0.005       0.013       
+Timer - Multiplication: 49 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 512':
+
+         52.535743      task-clock:u (msec)       #    0.996 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             1,669      page-faults:u             #    0.032 M/sec                  
+       150,253,522      cycles:u                  #    2.860 GHz                    
+       614,151,490      instructions:u            #    4.09  insn per cycle         
+        69,103,221      branches:u                # 1315.356 M/sec                  
+           269,185      branch-misses:u           #    0.39% of all branches        
+
+       0.052763833 seconds time elapsed
+
+       0.049665000 seconds user
+       0.002979000 seconds sys
+
+
+=======================================
+PROBLEM SIZE : 1024
+========
+Nested Vector
+Timer - Multiplication: 465 ms 
+Ret: 0
+Timer - Multiplication: 478 ms 
+Ret: 0
+Timer - Multiplication: 472 ms 
+Ret: 0
+Timer - Multiplication: 467 ms 
+Ret: 0
+Timer - Multiplication: 462 ms 
+Ret: 0
+Timer - Multiplication: 471 ms 
+Ret: 0
+Timer - Multiplication: 490 ms 
+Ret: 0
+===> multitime results
+1: ./mmulNV 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        0.494       0.018       0.476       0.489       0.528       
+user        0.476       0.011       0.465       0.472       0.497       
+sys         0.014       0.008       0.006       0.011       0.026       
+Timer - Multiplication: 541 ms 
+Ret: 0
+
+ Performance counter stats for './mmulNV 1024':
+
+        553.041683      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             6,302      page-faults:u             #    0.011 M/sec                  
+     1,587,200,480      cycles:u                  #    2.870 GHz                    
+     4,867,649,248      instructions:u            #    3.07  insn per cycle         
+       543,915,242      branches:u                #  983.498 M/sec                  
+         1,052,347      branch-misses:u           #    0.19% of all branches        
+
+       0.553590942 seconds time elapsed
+
+       0.543197000 seconds user
+       0.006963000 seconds sys
+
+
+========
+Multiplication
+Timer - Multiplication: 617 ms 
+Ret: 0
+Timer - Multiplication: 491 ms 
+Ret: 0
+Timer - Multiplication: 592 ms 
+Ret: 0
+Timer - Multiplication: 544 ms 
+Ret: 0
+Timer - Multiplication: 537 ms 
+Ret: 0
+Timer - Multiplication: 482 ms 
+Ret: 0
+Timer - Multiplication: 476 ms 
+Ret: 0
+===> multitime results
+1: ./mmulMU 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        0.561       0.054       0.493       0.555       0.636       
+user        0.539       0.052       0.477       0.537       0.618       
+sys         0.018       0.009       0.008       0.013       0.030       
+Timer - Multiplication: 498 ms 
+Ret: 0
+
+ Performance counter stats for './mmulMU 1024':
+
+        509.395829      task-clock:u (msec)       #    0.998 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             6,277      page-faults:u             #    0.012 M/sec                  
+     1,516,025,699      cycles:u                  #    2.976 GHz                    
+     5,417,338,754      instructions:u            #    3.57  insn per cycle         
+       547,255,190      branches:u                # 1074.322 M/sec                  
+         1,042,888      branch-misses:u           #    0.19% of all branches        
+
+       0.510299254 seconds time elapsed
+
+       0.498320000 seconds user
+       0.008953000 seconds sys
+
+
+========
+Indirection
+Timer - Multiplication: 451 ms 
+Ret: 0
+Timer - Multiplication: 435 ms 
+Ret: 0
+Timer - Multiplication: 443 ms 
+Ret: 0
+Timer - Multiplication: 441 ms 
+Ret: 0
+Timer - Multiplication: 440 ms 
+Ret: 0
+Timer - Multiplication: 451 ms 
+Ret: 0
+Timer - Multiplication: 452 ms 
+Ret: 0
+===> multitime results
+1: ./mmulIND 1024
+            Mean        Std.Dev.    Min         Median      Max
+real        0.465       0.012       0.449       0.462       0.482       
+user        0.446       0.006       0.437       0.447       0.453       
+sys         0.017       0.010       0.008       0.011       0.036       
+Timer - Multiplication: 443 ms 
+Ret: 0
+
+ Performance counter stats for './mmulIND 1024':
+
+        453.693606      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             6,278      page-faults:u             #    0.014 M/sec                  
+     1,370,045,283      cycles:u                  #    3.020 GHz                    
+     4,865,061,998      instructions:u            #    3.55  insn per cycle         
+       543,596,424      branches:u                # 1198.158 M/sec                  
+         1,053,544      branch-misses:u           #    0.19% of all branches        
+
+       0.454125124 seconds time elapsed
+
+       0.443892000 seconds user
+       0.007966000 seconds sys
+
+

@@ -1,0 +1,181 @@
+BENCHMARKING OF MonteCarlo.cpp
+======================================= 
+PROBLEM SIZE : 10
+========
+MonteCarlo.cpp
+Pi is 2.800000
+Pi is 3.200000
+Pi is 2.400000
+Pi is 2.400000
+Pi is 3.600000
+Pi is 3.200000
+Pi is 2.400000
+===> multitime results
+1: ./algo 10
+            Mean        Std.Dev.    Min         Median      Max
+real        0.001       0.001       0.000       0.002       0.002       
+user        0.001       0.001       0.000       0.002       0.002       
+sys         0.000       0.001       0.000       0.000       0.002       
+./benshmark.sh: line 18: perf: command not found
+======================================= OPENMP
+PROBLEM SIZE : 10
+========
+MonteCarlo.cpp
+Pi is 2.400000
+Pi is 3.200000
+Pi is 2.800000
+Pi is 3.200000
+Pi is 4.000000
+Pi is 3.600000
+Pi is 2.400000
+===> multitime results
+1: ./algo 10
+            Mean        Std.Dev.    Min         Median      Max
+real        0.001       0.001       0.000       0.002       0.002       
+user        0.001       0.001       0.000       0.001       0.002       
+sys         0.000       0.000       0.000       0.000       0.000       
+./benshmark.sh: line 25: perf: command not found
+======================================= 
+PROBLEM SIZE : 10000
+========
+MonteCarlo.cpp
+Pi is 3.120400
+Pi is 3.158800
+Pi is 3.178000
+Pi is 3.122400
+Pi is 3.156400
+Pi is 3.142000
+Pi is 3.150400
+===> multitime results
+1: ./algo 10000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.002       0.001       0.001       0.003       0.003       
+user        0.002       0.001       0.000       0.002       0.003       
+sys         0.001       0.001       0.000       0.000       0.003       
+./benshmark.sh: line 18: perf: command not found
+======================================= OPENMP
+PROBLEM SIZE : 10000
+========
+MonteCarlo.cpp
+Pi is 3.150400
+Pi is 3.146800
+Pi is 3.134400
+Pi is 3.145600
+Pi is 3.125200
+Pi is 3.144800
+Pi is 3.132400
+===> multitime results
+1: ./algo 10000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.003       0.001       0.001       0.003       0.004       
+user        0.001       0.001       0.000       0.000       0.003       
+sys         0.001       0.001       0.000       0.001       0.003       
+./benshmark.sh: line 25: perf: command not found
+======================================= 
+PROBLEM SIZE : 10000000
+========
+MonteCarlo.cpp
+Pi is 3.141742
+Pi is 3.141584
+Pi is 3.141684
+Pi is 3.140962
+Pi is 3.141515
+Pi is 3.142148
+Pi is 3.141700
+===> multitime results
+1: ./algo 10000000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.228       0.004       0.223       0.226       0.234       
+user        0.227       0.005       0.217       0.226       0.234       
+sys         0.001       0.003       0.000       0.000       0.008       
+./benshmark.sh: line 18: perf: command not found
+======================================= OPENMP
+PROBLEM SIZE : 10000000
+========
+MonteCarlo.cpp
+Pi is 3.141700
+Pi is 3.141323
+Pi is 3.141175
+Pi is 3.142131
+Pi is 3.141650
+Pi is 3.141513
+Pi is 3.142525
+===> multitime results
+1: ./algo 10000000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.218       0.015       0.192       0.226       0.234       
+user        0.217       0.015       0.192       0.222       0.234       
+sys         0.001       0.001       0.000       0.000       0.004       
+./benshmark.sh: line 25: perf: command not found
+======================================= 
+PROBLEM SIZE : 10000000000
+========
+MonteCarlo.cpp
+Pi is 3.141667
+Pi is 3.141602
+Pi is 3.141595
+Pi is 3.141623
+Pi is 3.141495
+Pi is 3.141572
+Pi is 3.141554
+===> multitime results
+1: ./algo 10000000000
+            Mean        Std.Dev.    Min         Median      Max
+real        27.155      0.236       26.873      27.105      27.518      
+user        27.149      0.231       26.871      27.105      27.512      
+sys         0.003       0.005       0.000       0.000       0.012       
+./benshmark.sh: line 18: perf: command not found
+======================================= OPENMP
+PROBLEM SIZE : 10000000000
+========
+MonteCarlo.cpp
+Pi is 3.141675
+Pi is 3.141616
+Pi is 3.141679
+Pi is 3.141587
+Pi is 3.141624
+Pi is 3.141573
+Pi is 3.141529
+===> multitime results
+1: ./algo 10000000000
+            Mean        Std.Dev.    Min         Median      Max
+real        26.984      0.124       26.797      26.970      27.237      
+user        26.981      0.124       26.796      26.970      27.232      
+sys         0.001       0.002       0.000       0.000       0.004       
+./benshmark.sh: line 25: perf: command not found
+======================================= 
+PROBLEM SIZE : 10000000000000
+========
+MonteCarlo.cpp
+Pi is 3.141699
+Pi is 3.141625
+Pi is 3.141700
+Pi is 3.141599
+Pi is 3.141601
+Pi is 3.141653
+Pi is 3.141587
+===> multitime results
+1: ./algo 10000000000000
+            Mean        Std.Dev.    Min         Median      Max
+real        25.400      0.291       24.999      25.311      25.887      
+user        25.392      0.289       24.995      25.305      25.879      
+sys         0.002       0.003       0.000       0.000       0.008       
+./benshmark.sh: line 18: perf: command not found
+======================================= OPENMP
+PROBLEM SIZE : 10000000000000
+========
+MonteCarlo.cpp
+Pi is 3.141593
+Pi is 3.141574
+Pi is 3.141610
+Pi is 3.141658
+Pi is 3.141572
+Pi is 3.141550
+Pi is 3.141580
+===> multitime results
+1: ./algo 10000000000000
+            Mean        Std.Dev.    Min         Median      Max
+real        25.434      0.403       25.009      25.459      26.282      
+user        25.417      0.386       25.005      25.449      26.224      
+sys         0.010       0.015       0.000       0.000       0.040       
+./benshmark.sh: line 25: perf: command not found

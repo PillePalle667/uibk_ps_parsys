@@ -1,0 +1,281 @@
+BENCHMARKING OF MergeSort.cpp
+======================================= 
+PROBLEM SIZE : 100
+========
+MergeSort.cpp
+===> multitime results
+1: ./algo 100
+            Mean        Std.Dev.    Min         Median      Max
+real        0.004       0.002       0.001       0.006       0.006       
+user        0.002       0.001       0.000       0.002       0.003       
+sys         0.002       0.001       0.001       0.002       0.003       
+
+ Performance counter stats for './algo 100':
+
+          0.927707      task-clock:u (msec)       #    0.777 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                97      page-faults:u             #    0.105 M/sec                  
+         1,448,513      cycles:u                  #    1.561 GHz                    
+         2,202,907      instructions:u            #    1.52  insn per cycle         
+           368,227      branches:u                #  396.922 M/sec                  
+            11,599      branch-misses:u           #    3.15% of all branches        
+
+       0.001193408 seconds time elapsed
+
+       0.001213000 seconds user
+       0.000000000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 100
+========
+MergeSort.cpp
+===> multitime results
+1: ./algoOpt 100
+            Mean        Std.Dev.    Min         Median      Max
+real        0.007       0.002       0.003       0.007       0.010       
+user        0.006       0.006       0.000       0.004       0.021       
+sys         0.004       0.003       0.001       0.004       0.008       
+
+ Performance counter stats for './algoOpt 100':
+
+          1.756377      task-clock:u (msec)       #    1.222 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               128      page-faults:u             #    0.073 M/sec                  
+         3,019,760      cycles:u                  #    1.719 GHz                    
+         2,701,309      instructions:u            #    0.89  insn per cycle         
+           469,130      branches:u                #  267.101 M/sec                  
+            15,016      branch-misses:u           #    3.20% of all branches        
+
+       0.001437592 seconds time elapsed
+
+       0.002021000 seconds user
+       0.000000000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 1000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algo 1000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.005       0.002       0.001       0.007       0.007       
+user        0.002       0.001       0.001       0.002       0.005       
+sys         0.002       0.002       0.000       0.001       0.005       
+
+ Performance counter stats for './algo 1000':
+
+          0.997400      task-clock:u (msec)       #    0.841 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               100      page-faults:u             #    0.100 M/sec                  
+         1,926,881      cycles:u                  #    1.932 GHz                    
+         3,714,760      instructions:u            #    1.93  insn per cycle         
+           691,354      branches:u                #  693.156 M/sec                  
+            17,210      branch-misses:u           #    2.49% of all branches        
+
+       0.001185481 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001224000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 1000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algoOpt 1000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.010       0.005       0.002       0.011       0.018       
+user        0.015       0.012       0.000       0.016       0.040       
+sys         0.005       0.002       0.003       0.005       0.009       
+
+ Performance counter stats for './algoOpt 1000':
+
+          4.221352      task-clock:u (msec)       #    2.026 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               134      page-faults:u             #    0.032 M/sec                  
+         8,605,969      cycles:u                  #    2.039 GHz                    
+         5,384,546      instructions:u            #    0.63  insn per cycle         
+         1,036,331      branches:u                #  245.497 M/sec                  
+            23,014      branch-misses:u           #    2.22% of all branches        
+
+       0.002084008 seconds time elapsed
+
+       0.004473000 seconds user
+       0.000000000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 10000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algo 10000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.016       0.007       0.003       0.019       0.025       
+user        0.013       0.006       0.002       0.016       0.020       
+sys         0.002       0.001       0.000       0.002       0.003       
+
+ Performance counter stats for './algo 10000':
+
+          3.020962      task-clock:u (msec)       #    0.936 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               156      page-faults:u             #    0.052 M/sec                  
+         7,677,215      cycles:u                  #    2.541 GHz                    
+        19,998,745      instructions:u            #    2.60  insn per cycle         
+         4,180,512      branches:u                # 1383.835 M/sec                  
+            72,498      branch-misses:u           #    1.73% of all branches        
+
+       0.003227210 seconds time elapsed
+
+       0.003281000 seconds user
+       0.000000000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 10000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algoOpt 10000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.029       0.012       0.009       0.028       0.044       
+user        0.073       0.030       0.028       0.072       0.109       
+sys         0.016       0.011       0.004       0.015       0.037       
+
+ Performance counter stats for './algoOpt 10000':
+
+         35.603110      task-clock:u (msec)       #    3.169 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               195      page-faults:u             #    0.005 M/sec                  
+        78,294,350      cycles:u                  #    2.199 GHz                    
+        34,835,730      instructions:u            #    0.44  insn per cycle         
+         7,336,390      branches:u                #  206.060 M/sec                  
+           102,960      branch-misses:u           #    1.40% of all branches        
+
+       0.011236221 seconds time elapsed
+
+       0.033613000 seconds user
+       0.002053000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 100000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algo 100000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.051       0.014       0.026       0.059       0.063       
+user        0.046       0.013       0.024       0.053       0.055       
+sys         0.005       0.002       0.002       0.004       0.007       
+
+ Performance counter stats for './algo 100000':
+
+         26.124740      task-clock:u (msec)       #    0.980 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               652      page-faults:u             #    0.025 M/sec                  
+        67,346,672      cycles:u                  #    2.578 GHz                    
+       190,567,526      instructions:u            #    2.83  insn per cycle         
+        40,726,341      branches:u                # 1558.919 M/sec                  
+           644,714      branch-misses:u           #    1.58% of all branches        
+
+       0.026646563 seconds time elapsed
+
+       0.024590000 seconds user
+       0.001972000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 100000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algoOpt 100000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.092       0.014       0.066       0.090       0.107       
+user        0.167       0.026       0.117       0.169       0.210       
+sys         0.058       0.008       0.043       0.060       0.066       
+
+ Performance counter stats for './algoOpt 100000':
+
+        155.766644      task-clock:u (msec)       #    2.436 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               853      page-faults:u             #    0.005 M/sec                  
+       274,216,905      cycles:u                  #    1.760 GHz                    
+       322,450,089      instructions:u            #    1.18  insn per cycle         
+        68,260,784      branches:u                #  438.225 M/sec                  
+           945,810      branch-misses:u           #    1.39% of all branches        
+
+       0.063943332 seconds time elapsed
+
+       0.110366000 seconds user
+       0.045407000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 1000000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algo 1000000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.254       0.021       0.232       0.240       0.284       
+user        0.235       0.018       0.218       0.223       0.260       
+sys         0.017       0.003       0.012       0.019       0.021       
+
+ Performance counter stats for './algo 1000000':
+
+        237.085810      task-clock:u (msec)       #    0.998 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             8,238      page-faults:u             #    0.035 M/sec                  
+       683,013,094      cycles:u                  #    2.881 GHz                    
+     1,936,844,925      instructions:u            #    2.84  insn per cycle         
+       413,691,803      branches:u                # 1744.903 M/sec                  
+         5,903,419      branch-misses:u           #    1.43% of all branches        
+
+       0.237461363 seconds time elapsed
+
+       0.224151000 seconds user
+       0.011942000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 1000000
+========
+MergeSort.cpp
+===> multitime results
+1: ./algoOpt 1000000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.620       0.060       0.576       0.592       0.762       
+user        0.828       0.085       0.756       0.801       1.026       
+sys         0.410       0.015       0.385       0.411       0.435       
+
+ Performance counter stats for './algoOpt 1000000':
+
+       1281.847255      task-clock:u (msec)       #    2.035 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             9,209      page-faults:u             #    0.007 M/sec                  
+     2,009,055,469      cycles:u                  #    1.567 GHz                    
+     3,272,476,604      instructions:u            #    1.63  insn per cycle         
+       701,044,353      branches:u                #  546.902 M/sec                  
+         8,172,388      branch-misses:u           #    1.17% of all branches        
+
+       0.629837553 seconds time elapsed
+
+       0.836537000 seconds user
+       0.439605000 seconds sys
+
+

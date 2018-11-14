@@ -47,6 +47,7 @@ int solve( Matrix& a, unsigned col, int solutions) {
 	unsigned n = a.size();
 
 	if(col == a.size()){
+		#pragma omp atomic
 		++solutions;
 		return solutions;
 	}

@@ -1,0 +1,32 @@
+Unoptimised size:  50000
+Mean:  5
+MAX:  10
+MIN:  0
+Unoptimised size:  100000
+Mean:  20
+MAX:  20
+MIN:  20
+Unoptimised size:  150000
+Mean:  32
+MAX:  30
+MIN:  30
+Unoptimised size:  1000000
+Mean:  374
+MAX:  370
+MIN:  370
+Optimised size:  50000
+Mean:  10
+MAX:  10
+MIN:  10
+Optimised size:  100000
+Mean:  20
+MAX:  20
+MIN:  20
+Optimised size:  150000
+Mean:  37
+MAX:  40
+MIN:  30
+Optimised size:  1000000
+Mean:  394
+MAX:  400
+MIN:  390

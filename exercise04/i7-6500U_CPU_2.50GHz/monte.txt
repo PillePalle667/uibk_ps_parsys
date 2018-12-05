@@ -1,0 +1,289 @@
+BENCHMARKING OF MonteCarlo.cpp
+======================================= 
+PROBLEM SIZE : 10
+========
+MonteCarlo.cpp
+Pi is 3.600000
+Pi is 4.000000
+Pi is 3.600000
+Pi is 3.200000
+Pi is 3.200000
+Pi is 3.600000
+Pi is 3.600000
+===> multitime results
+1: ./algo 10
+            Mean        Std.Dev.    Min         Median      Max
+real        0.003       0.002       0.001       0.001       0.006       
+user        0.001       0.001       0.000       0.001       0.003       
+sys         0.001       0.001       0.000       0.001       0.003       
+Pi is 3.600000
+
+ Performance counter stats for './algo 10':
+
+          3.645394      task-clock:u (msec)       #    0.806 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                98      page-faults:u             #    0.027 M/sec                  
+         1,758,649      cycles:u                  #    0.482 GHz                    
+         2,034,502      instructions:u            #    1.16  insn per cycle         
+           332,674      branches:u                #   91.259 M/sec                  
+            10,706      branch-misses:u           #    3.22% of all branches        
+
+       0.004521668 seconds time elapsed
+
+       0.001748000 seconds user
+       0.002607000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 10
+========
+MonteCarlo.cpp
+Pi is 3.600000
+Pi is 2.800000
+Pi is 2.800000
+Pi is 3.600000
+Pi is 3.600000
+Pi is 3.600000
+Pi is 2.800000
+===> multitime results
+1: ./algoOpt 10
+            Mean        Std.Dev.    Min         Median      Max
+real        0.008       0.008       0.002       0.006       0.027       
+user        0.012       0.018       0.000       0.005       0.056       
+sys         0.002       0.001       0.000       0.002       0.003       
+Pi is 2.800000
+
+ Performance counter stats for './algoOpt 10':
+
+          3.607034      task-clock:u (msec)       #    0.990 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               124      page-faults:u             #    0.034 M/sec                  
+         2,090,221      cycles:u                  #    0.579 GHz                    
+         2,386,404      instructions:u            #    1.14  insn per cycle         
+           402,129      branches:u                #  111.485 M/sec                  
+            12,895      branch-misses:u           #    3.21% of all branches        
+
+       0.003641915 seconds time elapsed
+
+       0.001398000 seconds user
+       0.002822000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 10000
+========
+MonteCarlo.cpp
+Pi is 3.136000
+Pi is 3.119600
+Pi is 3.133200
+Pi is 3.122400
+Pi is 3.166800
+Pi is 3.181600
+Pi is 3.181600
+===> multitime results
+1: ./algo 10000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.006       0.002       0.002       0.007       0.008       
+user        0.003       0.002       0.000       0.003       0.005       
+sys         0.002       0.001       0.000       0.002       0.004       
+Pi is 3.138400
+
+ Performance counter stats for './algo 10000':
+
+          3.183124      task-clock:u (msec)       #    0.828 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               101      page-faults:u             #    0.032 M/sec                  
+         1,839,337      cycles:u                  #    0.578 GHz                    
+         3,325,529      instructions:u            #    1.81  insn per cycle         
+           691,692      branches:u                #  217.300 M/sec                  
+            13,711      branch-misses:u           #    1.98% of all branches        
+
+       0.003843366 seconds time elapsed
+
+       0.001874000 seconds user
+       0.001839000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 10000
+========
+MonteCarlo.cpp
+Pi is 3.118000
+Pi is 3.123600
+Pi is 3.121600
+Pi is 3.112000
+Pi is 3.080800
+Pi is 3.120000
+Pi is 3.138000
+===> multitime results
+1: ./algoOpt 10000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.012       0.005       0.006       0.010       0.021       
+user        0.015       0.008       0.006       0.010       0.028       
+sys         0.015       0.009       0.009       0.012       0.036       
+Pi is 3.128400
+
+ Performance counter stats for './algoOpt 10000':
+
+         16.508329      task-clock:u (msec)       #    2.032 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               123      page-faults:u             #    0.007 M/sec                  
+        13,848,655      cycles:u                  #    0.839 GHz                    
+         4,165,875      instructions:u            #    0.30  insn per cycle         
+           920,377      branches:u                #   55.752 M/sec                  
+            21,708      branch-misses:u           #    2.36% of all branches        
+
+       0.008123161 seconds time elapsed
+
+       0.013525000 seconds user
+       0.003901000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 1000000
+========
+MonteCarlo.cpp
+Pi is 3.142152
+Pi is 3.142152
+Pi is 3.141624
+Pi is 3.142948
+Pi is 3.139028
+Pi is 3.139028
+Pi is 3.139484
+===> multitime results
+1: ./algo 1000000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.047       0.015       0.023       0.058       0.060       
+user        0.044       0.014       0.021       0.054       0.057       
+sys         0.002       0.001       0.000       0.002       0.004       
+Pi is 3.139484
+
+ Performance counter stats for './algo 1000000':
+
+         30.313668      task-clock:u (msec)       #    0.979 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               101      page-faults:u             #    0.003 M/sec                  
+        62,983,818      cycles:u                  #    2.078 GHz                    
+       131,258,918      instructions:u            #    2.08  insn per cycle         
+        36,267,863      branches:u                # 1196.419 M/sec                  
+           312,294      branch-misses:u           #    0.86% of all branches        
+
+       0.030977939 seconds time elapsed
+
+       0.028873000 seconds user
+       0.001934000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 1000000
+========
+MonteCarlo.cpp
+Pi is 3.112600
+Pi is 3.118472
+Pi is 3.133988
+Pi is 3.119564
+Pi is 3.115932
+Pi is 3.112032
+Pi is 3.114336
+===> multitime results
+1: ./algoOpt 1000000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.253       0.015       0.224       0.261       0.266       
+user        0.348       0.023       0.306       0.352       0.379       
+sys         0.499       0.086       0.324       0.497       0.583       
+Pi is 3.126792
+
+ Performance counter stats for './algoOpt 1000000':
+
+        538.555008      task-clock:u (msec)       #    3.148 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               124      page-faults:u             #    0.230 K/sec                  
+       426,152,883      cycles:u                  #    0.791 GHz                    
+       148,772,961      instructions:u            #    0.35  insn per cycle         
+        43,105,304      branches:u                #   80.039 M/sec                  
+           885,515      branch-misses:u           #    2.05% of all branches        
+
+       0.171084129 seconds time elapsed
+
+       0.209683000 seconds user
+       0.365937000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 10000000
+========
+MonteCarlo.cpp
+Pi is 3.142227
+Pi is 3.141794
+Pi is 3.141560
+Pi is 3.141384
+Pi is 3.141910
+Pi is 3.141873
+Pi is 3.142306
+===> multitime results
+1: ./algo 10000000
+            Mean        Std.Dev.    Min         Median      Max
+real        0.238       0.011       0.212       0.240       0.250       
+user        0.234       0.010       0.210       0.236       0.244       
+sys         0.003       0.001       0.001       0.003       0.004       
+Pi is 3.141426
+
+ Performance counter stats for './algo 10000000':
+
+        223.324718      task-clock:u (msec)       #    0.997 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               100      page-faults:u             #    0.448 K/sec                  
+       621,429,982      cycles:u                  #    2.783 GHz                    
+     1,294,303,919      instructions:u            #    2.08  insn per cycle         
+       359,687,423      branches:u                # 1610.603 M/sec                  
+         3,017,293      branch-misses:u           #    0.84% of all branches        
+
+       0.223976568 seconds time elapsed
+
+       0.221236000 seconds user
+       0.001954000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 10000000
+========
+MonteCarlo.cpp
+Pi is 3.117310
+Pi is 3.122202
+Pi is 3.118084
+Pi is 3.117114
+Pi is 3.115130
+Pi is 3.116212
+Pi is 3.116502
+===> multitime results
+1: ./algoOpt 10000000
+            Mean        Std.Dev.    Min         Median      Max
+real        2.183       0.092       1.992       2.175       2.287       
+user        3.044       0.243       2.501       3.091       3.292       
+sys         4.618       0.414       3.748       4.648       5.118       
+Pi is 3.122970
+
+ Performance counter stats for './algoOpt 10000000':
+
+       6251.470859      task-clock:u (msec)       #    3.246 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               123      page-faults:u             #    0.020 K/sec                  
+     4,191,559,922      cycles:u                  #    0.670 GHz                    
+     1,466,275,020      instructions:u            #    0.35  insn per cycle         
+       424,815,253      branches:u                #   67.954 M/sec                  
+         9,976,605      branch-misses:u           #    2.35% of all branches        
+
+       1.925652959 seconds time elapsed
+
+       2.299679000 seconds user
+       4.475007000 seconds sys
+
+

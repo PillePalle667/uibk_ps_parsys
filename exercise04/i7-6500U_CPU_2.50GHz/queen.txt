@@ -1,0 +1,361 @@
+BENCHMARKING OF Queens.cpp
+======================================= 
+PROBLEM SIZE : 10
+========
+Queens.cpp
+724 Solutions
+724 Solutions
+724 Solutions
+724 Solutions
+724 Solutions
+724 Solutions
+724 Solutions
+===> multitime results
+1: ./algo 10
+            Mean        Std.Dev.    Min         Median      Max
+real        0.019       0.011       0.009       0.011       0.036       
+user        0.017       0.010       0.007       0.010       0.032       
+sys         0.001       0.001       0.000       0.001       0.002       
+724 Solutions
+
+ Performance counter stats for './algo 10':
+
+         16.768543      task-clock:u (msec)       #    0.974 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                98      page-faults:u             #    0.006 M/sec                  
+        18,940,090      cycles:u                  #    1.130 GHz                    
+        26,978,368      instructions:u            #    1.42  insn per cycle         
+         7,146,886      branches:u                #  426.208 M/sec                  
+           468,223      branch-misses:u           #    6.55% of all branches        
+
+       0.017215135 seconds time elapsed
+
+       0.015182000 seconds user
+       0.001908000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 10
+========
+Queens.cpp
+192 Solutions
+151 Solutions
+158 Solutions
+158 Solutions
+158 Solutions
+188 Solutions
+183 Solutions
+===> multitime results
+1: ./algoOpt 10
+            Mean        Std.Dev.    Min         Median      Max
+real        0.031       0.009       0.015       0.033       0.040       
+user        0.081       0.026       0.038       0.076       0.121       
+sys         0.010       0.006       0.003       0.011       0.020       
+158 Solutions
+
+ Performance counter stats for './algoOpt 10':
+
+         42.188805      task-clock:u (msec)       #    3.198 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               133      page-faults:u             #    0.003 M/sec                  
+       106,875,780      cycles:u                  #    2.533 GHz                    
+        18,133,397      instructions:u            #    0.17  insn per cycle         
+         4,158,011      branches:u                #   98.557 M/sec                  
+           101,927      branch-misses:u           #    2.45% of all branches        
+
+       0.013192773 seconds time elapsed
+
+       0.040330000 seconds user
+       0.001986000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 11
+========
+Queens.cpp
+2680 Solutions
+2680 Solutions
+2680 Solutions
+2680 Solutions
+2680 Solutions
+2680 Solutions
+2680 Solutions
+===> multitime results
+1: ./algo 11
+            Mean        Std.Dev.    Min         Median      Max
+real        0.058       0.015       0.033       0.065       0.072       
+user        0.055       0.014       0.032       0.061       0.068       
+sys         0.002       0.001       0.001       0.002       0.003       
+2680 Solutions
+
+ Performance counter stats for './algo 11':
+
+         33.872229      task-clock:u (msec)       #    0.990 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                99      page-faults:u             #    0.003 M/sec                  
+        92,987,007      cycles:u                  #    2.745 GHz                    
+       137,248,345      instructions:u            #    1.48  insn per cycle         
+        37,835,342      branches:u                # 1117.002 M/sec                  
+         2,291,284      branch-misses:u           #    6.06% of all branches        
+
+       0.034208908 seconds time elapsed
+
+       0.033742000 seconds user
+       0.000000000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 11
+========
+Queens.cpp
+375 Solutions
+566 Solutions
+303 Solutions
+33 Solutions
+0 Solutions
+375 Solutions
+1 Solutions
+===> multitime results
+1: ./algoOpt 11
+            Mean        Std.Dev.    Min         Median      Max
+real        0.028       0.019       0.007       0.021       0.059       
+user        0.070       0.052       0.007       0.059       0.158       
+sys         0.012       0.010       0.001       0.006       0.028       
+711 Solutions
+
+ Performance counter stats for './algoOpt 11':
+
+         82.073451      task-clock:u (msec)       #    2.373 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               134      page-faults:u             #    0.002 M/sec                  
+       176,883,744      cycles:u                  #    2.155 GHz                    
+        61,343,147      instructions:u            #    0.35  insn per cycle         
+        14,054,089      branches:u                #  171.238 M/sec                  
+           408,808      branch-misses:u           #    2.91% of all branches        
+
+       0.034585361 seconds time elapsed
+
+       0.066951000 seconds user
+       0.015053000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 12
+========
+Queens.cpp
+14200 Solutions
+14200 Solutions
+14200 Solutions
+14200 Solutions
+14200 Solutions
+14200 Solutions
+14200 Solutions
+===> multitime results
+1: ./algo 12
+            Mean        Std.Dev.    Min         Median      Max
+real        0.191       0.012       0.177       0.192       0.211       
+user        0.189       0.012       0.173       0.189       0.207       
+sys         0.001       0.001       0.000       0.001       0.003       
+14200 Solutions
+
+ Performance counter stats for './algo 12':
+
+        171.452473      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                99      page-faults:u             #    0.577 K/sec                  
+       506,313,187      cycles:u                  #    2.953 GHz                    
+       790,401,739      instructions:u            #    1.56  insn per cycle         
+       221,862,536      branches:u                # 1294.018 M/sec                  
+        12,115,992      branch-misses:u           #    5.46% of all branches        
+
+       0.171698770 seconds time elapsed
+
+       0.171385000 seconds user
+       0.000000000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 12
+========
+Queens.cpp
+1405 Solutions
+1505 Solutions
+1839 Solutions
+1511 Solutions
+487 Solutions
+29 Solutions
+63 Solutions
+===> multitime results
+1: ./algoOpt 12
+            Mean        Std.Dev.    Min         Median      Max
+real        0.093       0.048       0.040       0.092       0.174       
+user        0.127       0.021       0.105       0.118       0.162       
+sys         0.035       0.018       0.015       0.031       0.066       
+3321 Solutions
+
+ Performance counter stats for './algoOpt 12':
+
+        204.521846      task-clock:u (msec)       #    1.315 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               136      page-faults:u             #    0.665 K/sec                  
+       339,869,198      cycles:u                  #    1.662 GHz                    
+       297,953,684      instructions:u            #    0.88  insn per cycle         
+        68,731,183      branches:u                #  336.058 M/sec                  
+         2,080,491      branch-misses:u           #    3.03% of all branches        
+
+       0.155491606 seconds time elapsed
+
+       0.130903000 seconds user
+       0.072752000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 13
+========
+Queens.cpp
+73712 Solutions
+73712 Solutions
+73712 Solutions
+73712 Solutions
+73712 Solutions
+73712 Solutions
+73712 Solutions
+===> multitime results
+1: ./algo 13
+            Mean        Std.Dev.    Min         Median      Max
+real        0.989       0.015       0.959       0.997       1.001       
+user        0.985       0.014       0.956       0.992       0.997       
+sys         0.002       0.001       0.001       0.002       0.005       
+73712 Solutions
+
+ Performance counter stats for './algo 13':
+
+        975.772539      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               100      page-faults:u             #    0.102 K/sec                  
+     2,905,921,249      cycles:u                  #    2.978 GHz                    
+     4,857,434,137      instructions:u            #    1.67  insn per cycle         
+     1,380,236,002      branches:u                # 1414.506 M/sec                  
+        65,931,501      branch-misses:u           #    4.78% of all branches        
+
+       0.976084279 seconds time elapsed
+
+       0.974469000 seconds user
+       0.000000000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 13
+========
+Queens.cpp
+7582 Solutions
+1514 Solutions
+1008 Solutions
+10738 Solutions
+13425 Solutions
+5549 Solutions
+1132 Solutions
+===> multitime results
+1: ./algoOpt 13
+            Mean        Std.Dev.    Min         Median      Max
+real        0.377       0.277       0.102       0.299       0.872       
+user        0.302       0.180       0.113       0.237       0.637       
+sys         0.153       0.109       0.047       0.121       0.340       
+334 Solutions
+
+ Performance counter stats for './algoOpt 13':
+
+         88.903453      task-clock:u (msec)       #    2.033 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               137      page-faults:u             #    0.002 M/sec                  
+       191,424,780      cycles:u                  #    2.153 GHz                    
+        91,600,158      instructions:u            #    0.48  insn per cycle         
+        21,584,845      branches:u                #  242.790 M/sec                  
+           583,773      branch-misses:u           #    2.70% of all branches        
+
+       0.043726131 seconds time elapsed
+
+       0.069029000 seconds user
+       0.020126000 seconds sys
+
+
+======================================= 
+PROBLEM SIZE : 14
+========
+Queens.cpp
+365596 Solutions
+365596 Solutions
+365596 Solutions
+365596 Solutions
+365596 Solutions
+365596 Solutions
+365596 Solutions
+===> multitime results
+1: ./algo 14
+            Mean        Std.Dev.    Min         Median      Max
+real        5.863       0.056       5.775       5.855       5.968       
+user        5.846       0.054       5.766       5.832       5.950       
+sys         0.003       0.002       0.001       0.002       0.007       
+365596 Solutions
+
+ Performance counter stats for './algo 14':
+
+       6004.461245      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               101      page-faults:u             #    0.017 K/sec                  
+    18,016,478,725      cycles:u                  #    3.001 GHz                    
+    31,853,937,187      instructions:u            #    1.77  insn per cycle         
+     9,143,496,469      branches:u                # 1522.784 M/sec                  
+       382,812,601      branch-misses:u           #    4.19% of all branches        
+
+       6.009660902 seconds time elapsed
+
+       5.983025000 seconds user
+       0.004939000 seconds sys
+
+
+======================================= OPENMP
+PROBLEM SIZE : 14
+========
+Queens.cpp
+8662 Solutions
+30358 Solutions
+5835 Solutions
+28870 Solutions
+94192 Solutions
+10371 Solutions
+14280 Solutions
+===> multitime results
+1: ./algoOpt 14
+            Mean        Std.Dev.    Min         Median      Max
+real        1.870       1.787       0.476       1.003       6.000       
+user        1.202       1.074       0.377       0.672       3.688       
+sys         0.737       0.707       0.176       0.379       2.368       
+14811 Solutions
+
+ Performance counter stats for './algoOpt 14':
+
+        892.370418      task-clock:u (msec)       #    1.056 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+               138      page-faults:u             #    0.155 K/sec                  
+     1,213,675,712      cycles:u                  #    1.360 GHz                    
+     1,781,404,423      instructions:u            #    1.47  insn per cycle         
+       426,208,670      branches:u                #  477.614 M/sec                  
+        11,330,842      branch-misses:u           #    2.66% of all branches        
+
+       0.845299488 seconds time elapsed
+
+       0.573658000 seconds user
+       0.316174000 seconds sys
+
+

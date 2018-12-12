@@ -59,6 +59,7 @@ double computeStencil(int startx, int stopx, int starty, int stopy, stencil &ste
 			(j-1 < 0) ? lowy= edgeY0 : lowy=stenz[i][j-1];
 			(j+1 >= N) ? highy=edgeY1 : highy=stenz[i][j+1];
 			b[i][j] = transition(lowx, highx, lowy, highy);
+			#pragma omp atomic
 			change+= b[i][j]-tmp;
 		}
 	}
@@ -86,7 +87,7 @@ void iterate(double change_rate, stencil &stenz){
 
 int main(){
 
-	omp_set_num_threads(1);
+	omp_set_num_threads(4);
 	int n=512;
 	
 	stencil stenz = initStencil(n);

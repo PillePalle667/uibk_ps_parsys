@@ -233,7 +233,7 @@ int main(int argc, char* argv[]){
 	printf("Hello\n");
 	result= initStencil(n);
 		for(int i=0; i< N; i++){
-			MPI_Reduce( &stenz[i],&result[i], N, MPI_FLOAT, MPI_SUM, 0, MPI_COMM_WORLD);	
+			MPI_Gather( &stenz[i],&result[i], N, MPI_FLOAT, MPI_SUM, 0, MPI_COMM_WORLD);	
 	if(id==0){
 		/**result= initStencil(n);
 		for(int i=0; i< N; i++){
